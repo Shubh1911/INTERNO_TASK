@@ -1,0 +1,424 @@
+/* css resets starts */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html, body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: normal;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+/* css reset ends */
+@font-face {
+  font-family: DM serif Display;
+  src: url(../vendor/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: jost-normal;
+  src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+header nav {
+  justify-content: space-between;
+}
+header nav .logo {
+  align-items: center;
+}
+header nav .logo .logo__text {
+  padding: 0px 11px;
+}
+header nav .logo .logo__text p {
+  font-size: 37px;
+  font-family: DM serif Display;
+}
+header nav .horizontal__list {
+  align-items: center;
+  gap: 31px;
+}
+header nav .horizontal__list ul {
+  gap: 48px;
+}
+header nav .horizontal__list ul li a {
+  font-size: 20px;
+  font-family: jost-normal;
+  font-weight: 400;
+  color: black;
+}
+
+main .banner {
+  margin: 0;
+  position: relative;
+}
+main .banner .container .banner__content {
+  position: absolute;
+  top: 30%;
+  max-width: 567px;
+  display: flex;
+  flex-direction: column;
+  gap: 14.8px;
+}
+main .banner .container .banner__content .banner__content--heading p {
+  font-size: 84px;
+  font-family: DM serif Display;
+}
+main .banner .container .banner__content .banner__content--para p {
+  font-size: 22px;
+  font-family: jost-normal;
+}
+main .banner .container .banner__content .banner__content--button a button {
+  border-radius: 18px;
+  border: none;
+  background-color: #292F36;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
+main .banner .container .banner__content .banner__content--button a button p {
+  font-size: 18px;
+  font-family: jost-normal;
+  color: white;
+}
+main .our__plans .container {
+  padding: 0px 22px;
+}
+main .our__plans .container .card__div {
+  justify-content: space-between;
+}
+main .our__plans .container .card__div .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 358px;
+}
+main .our__plans .container .card__div .card h1 {
+  font-size: 25px;
+  font-family: DM serif Display;
+}
+main .our__plans .container .card__div .card p {
+  font-size: 22px;
+  font-family: jost-normal;
+}
+main .our__plans .container .card__div .card .card__button {
+  display: flex;
+  justify-content: center;
+}
+main .our__plans .container .card__div .card .card__button a button {
+  border: none;
+  background: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+main .our__plans .container .card__div .card .card__button a button p {
+  font-size: 18px;
+  font-family: jost-normal;
+}
+main .contact__us .container .contact__content--div {
+  justify-content: space-between;
+}
+main .contact__us .container .contact__content--div .left__div {
+  width: 472px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--heading {
+  padding-right: 52px;
+  margin: 43px 33px 0px 0px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--heading p {
+  font-size: 50px;
+  font-family: DM serif Display;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--para {
+  margin-bottom: 45px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--para p {
+  font-size: 22px;
+  font-family: jost-normal;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--call {
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 47px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--call p {
+  font-family: jost-normal;
+  font-size: 22px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--call p b {
+  font-size: 24px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--button a button {
+  border-radius: 18px;
+  border: none;
+  background-color: #292F36;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
+main .contact__us .container .contact__content--div .left__div .left__div--button a button p {
+  font-size: 18px;
+  font-family: jost-normal;
+  color: white;
+}
+main .brand__div .client__logo {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 55px;
+}
+main .about__us .about__us--content {
+  background-color: #F4F0EC;
+  padding: 40px 0px;
+}
+main .about__us .about__us--content .content__heading {
+  font-size: 50px;
+  text-align: center;
+  width: 547px;
+  margin: 0 auto;
+  font-family: DM serif Display;
+}
+main .about__us .about__us--content .cards {
+  margin-top: 38px;
+  padding: 0px 25px;
+  justify-content: space-between;
+}
+main .about__us .about__us--content .cards .card {
+  padding: 90px 37px;
+  width: 370px;
+  border-radius: 20px;
+  background-color: white;
+}
+main .about__us .about__us--content .cards .card .card__top {
+  align-items: center;
+  gap: 10px;
+}
+main .about__us .about__us--content .cards .card .card__top img {
+  border-radius: 50%;
+}
+main .about__us .about__us--content .cards .card .card__bottom p {
+  margin-top: 24px;
+}
+main .our__project .heading {
+  width: 737px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .our__project .heading h2 {
+  font-size: 50px;
+  font-family: DM serif Display;
+}
+main .our__project .heading p {
+  font-size: 22px;
+  font-family: jost-normal;
+}
+main .our__project .project__cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .our__project .project__cards .project__card {
+  margin-top: 56px;
+  width: 550px;
+}
+main .our__project .project__cards .project__card .project__card--bottom {
+  justify-content: space-between;
+  padding-top: 10px;
+}
+main .our__project .project__cards .project__card .project__card--bottom .btn {
+  border: none;
+  border-radius: 50%;
+}
+main .blog .container .blog__heading {
+  width: 737px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .blog .container .blog__heading h2 {
+  font-size: 50px;
+  font-family: DM serif Display;
+}
+main .blog .container .blog__heading p {
+  font-size: 22px;
+  font-family: jost-normal;
+}
+main .blog .container .blog__cards {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+main .blog .container .blog__cards .blog__card {
+  padding: 21px;
+  position: relative;
+  border-radius: 62px;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+}
+main .blog .container .blog__cards .blog__card .blog__card--top {
+  border-radius: 10px 10px 0px 0px;
+}
+main .blog .container .blog__cards .blog__card .blog__card--bottom .design__type {
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 3px;
+  background: white;
+  top: 58%;
+  left: 10%;
+}
+main .blog .container .blog__cards .blog__card h3 {
+  margin-top: 10px;
+  width: 305px;
+}
+main .blog .container .blog__cards .blog__card .date {
+  align-items: center;
+  justify-content: space-between;
+}
+main .blog .container .blog__cards .blog__card .date button {
+  background: none;
+  border: none;
+}
+main .contact .contact__card {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 25px;
+}
+main .contact .contact__card h1 {
+  font-size: 50px;
+  font-family: DM serif Display;
+}
+main .contact .contact__card p {
+  font-family: jost-normal;
+  font-size: 22px;
+}
+main .contact .contact__card .card__button {
+  display: flex;
+  justify-content: center;
+}
+main .contact .contact__card .card__button a button {
+  margin-top: 32px;
+  border-radius: 18px;
+  border: none;
+  background-color: #CDA274;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
+main .contact .contact__card .card__button a button p {
+  font-size: 18px;
+  color: white;
+  font-family: jost-normal;
+}
+main .background__div {
+  background-color: #F4F0EC;
+}
+main .background__div .counter {
+  justify-content: space-around;
+  padding: 9.5rem 0rem;
+}
+main .background__div .counter .counter__text {
+  padding: 0px 40px;
+  border-right: 1px solid #CDA274;
+}
+main .background__div .counter .counter__text h2 {
+  text-align: center;
+  font-size: 84px;
+  font-family: DM serif Display;
+  color: #CDA274;
+}
+main .background__div .counter .counter__text p {
+  font-size: 22px;
+  font-family: jost-normal;
+}
+
+footer .container .footer__content {
+  justify-content: space-between;
+}
+footer .container .footer__content .footer__pages ul, footer .container .footer__content .footer__services ul {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .footer__content .footer__pages ul li a, footer .container .footer__content .footer__services ul li a {
+  color: black;
+}
+footer .container .footer__content .footer__icon .icons {
+  gap: 54px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.display__flex {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

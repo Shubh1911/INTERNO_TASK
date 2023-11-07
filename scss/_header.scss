@@ -1,0 +1,32 @@
+@use './typography';
+header{
+    nav{
+    justify-content: space-between;
+        .logo{
+            align-items: center;
+        
+            .logo__text{
+          padding: 0px 11px;
+            p{ 
+            font-size: 37px;
+            font-family: DM serif Display;
+         }
+        }
+    }
+    .horizontal__list{
+        align-items: center;
+        gap: 31px;
+        ul{
+            gap: 48px;
+            li{
+                a{
+                    font-size: 20px;
+                    font-family: jost-normal;
+                    font-weight: 400;
+                    color: black;
+                }
+            }
+        }
+    }
+    }
+}
