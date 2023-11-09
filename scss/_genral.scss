@@ -1,5 +1,6 @@
 /* css resets starts */
 /* Box sizing rules */
+@use './typography';
 *,
 *::before,
 *::after {
@@ -62,4 +63,31 @@ a{
 section{
   margin-top: 5rem;
 }
-/* css reset ends */
+p{
+  font-family: jost-normal;
+  font-size: 18px;
+}
+h1{
+  font-size: 84px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+  font-size: 50px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+  font-size: 40px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+h4{
+  font-size: 25px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}

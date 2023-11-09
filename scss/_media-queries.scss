@@ -1,0 +1,13 @@
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+
+
+@media (max-width: #{$extra-large-screen}) {
+
+   .container{
+    max-width: 960px;
+   }
+
+  }

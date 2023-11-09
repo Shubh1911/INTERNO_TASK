@@ -1,5 +1,13 @@
 /* css resets starts */
 /* Box sizing rules */
+@font-face {
+  font-family: DM serif Display;
+  src: url(../vendor/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: jost-normal;
+  src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
+}
 *,
 *::before,
 *::after {
@@ -72,15 +80,39 @@ section {
   margin-top: 5rem;
 }
 
-/* css reset ends */
-@font-face {
-  font-family: DM serif Display;
-  src: url(../vendor/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
-}
-@font-face {
+p {
   font-family: jost-normal;
-  src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
+  font-size: 18px;
 }
+
+h1 {
+  font-size: 84px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header nav {
   justify-content: space-between;
 }
@@ -89,10 +121,6 @@ header nav .logo {
 }
 header nav .logo .logo__text {
   padding: 0px 11px;
-}
-header nav .logo .logo__text p {
-  font-size: 37px;
-  font-family: DM serif Display;
 }
 header nav .horizontal__list {
   align-items: center;
@@ -112,21 +140,16 @@ main .banner {
   margin: 0;
   position: relative;
 }
+main .banner img {
+  border-radius: 0% 0% 0% 15%;
+}
 main .banner .container .banner__content {
   position: absolute;
   top: 30%;
-  max-width: 567px;
+  max-width: 29%;
   display: flex;
   flex-direction: column;
   gap: 14.8px;
-}
-main .banner .container .banner__content .banner__content--heading p {
-  font-size: 84px;
-  font-family: DM serif Display;
-}
-main .banner .container .banner__content .banner__content--para p {
-  font-size: 22px;
-  font-family: jost-normal;
 }
 main .banner .container .banner__content .banner__content--button a button {
   border-radius: 18px;
@@ -147,21 +170,13 @@ main .our__plans .container {
   padding: 0px 22px;
 }
 main .our__plans .container .card__div {
-  justify-content: space-between;
+  gap: 42px;
 }
 main .our__plans .container .card__div .card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 358px;
-}
-main .our__plans .container .card__div .card h1 {
-  font-size: 25px;
-  font-family: DM serif Display;
-}
-main .our__plans .container .card__div .card p {
-  font-size: 22px;
-  font-family: jost-normal;
+  width: 33%;
 }
 main .our__plans .container .card__div .card .card__button {
   display: flex;
@@ -174,42 +189,32 @@ main .our__plans .container .card__div .card .card__button a button {
   gap: 5px;
   align-items: center;
 }
-main .our__plans .container .card__div .card .card__button a button p {
-  font-size: 18px;
-  font-family: jost-normal;
-}
 main .contact__us .container .contact__content--div {
-  justify-content: space-between;
+  gap: 75px;
 }
 main .contact__us .container .contact__content--div .left__div {
-  width: 472px;
+  width: 50%;
 }
 main .contact__us .container .contact__content--div .left__div .left__div--heading {
   padding-right: 52px;
   margin: 43px 33px 0px 0px;
 }
-main .contact__us .container .contact__content--div .left__div .left__div--heading p {
-  font-size: 50px;
-  font-family: DM serif Display;
-}
 main .contact__us .container .contact__content--div .left__div .left__div--para {
   margin-bottom: 45px;
-}
-main .contact__us .container .contact__content--div .left__div .left__div--para p {
-  font-size: 22px;
-  font-family: jost-normal;
 }
 main .contact__us .container .contact__content--div .left__div .left__div--call {
   align-items: center;
   gap: 15px;
   margin-bottom: 47px;
 }
-main .contact__us .container .contact__content--div .left__div .left__div--call p {
-  font-family: jost-normal;
-  font-size: 22px;
-}
 main .contact__us .container .contact__content--div .left__div .left__div--call p b {
   font-size: 24px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--call p .right__div {
+  width: 50%;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--call p .right__div img {
+  border-radius: 0% 40%;
 }
 main .contact__us .container .contact__content--div .left__div .left__div--button a button {
   border-radius: 18px;
@@ -236,20 +241,18 @@ main .about__us .about__us--content {
   padding: 40px 0px;
 }
 main .about__us .about__us--content .content__heading {
-  font-size: 50px;
   text-align: center;
   width: 547px;
   margin: 0 auto;
-  font-family: DM serif Display;
 }
 main .about__us .about__us--content .cards {
   margin-top: 38px;
   padding: 0px 25px;
-  justify-content: space-between;
+  gap: 20px;
 }
 main .about__us .about__us--content .cards .card {
   padding: 90px 37px;
-  width: 370px;
+  width: 33%;
   border-radius: 20px;
   background-color: white;
 }
@@ -268,21 +271,24 @@ main .our__project .heading {
   margin: 0 auto;
   text-align: center;
 }
-main .our__project .heading h2 {
-  font-size: 50px;
-  font-family: DM serif Display;
-}
-main .our__project .heading p {
-  font-size: 22px;
-  font-family: jost-normal;
-}
 main .our__project .project__cards {
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 104px;
 }
 main .our__project .project__cards .project__card {
-  margin-top: 56px;
-  width: 550px;
+  width: 45%;
+}
+main .our__project .project__cards .project__card .project__card--top .img1 {
+  border-radius: 0% 15% 0% 0%;
+}
+main .our__project .project__cards .project__card .project__card--top .img2 {
+  border-radius: 15% 0% 0% 0%;
+}
+main .our__project .project__cards .project__card .project__card--top .img3 {
+  border-radius: 0% 0% 15% 0%;
+}
+main .our__project .project__cards .project__card .project__card--top .img4 {
+  border-radius: 0% 0% 0% 15%;
 }
 main .our__project .project__cards .project__card .project__card--bottom {
   justify-content: space-between;
@@ -297,19 +303,11 @@ main .blog .container .blog__heading {
   margin: 0 auto;
   text-align: center;
 }
-main .blog .container .blog__heading h2 {
-  font-size: 50px;
-  font-family: DM serif Display;
-}
-main .blog .container .blog__heading p {
-  font-size: 22px;
-  font-family: jost-normal;
-}
 main .blog .container .blog__cards {
-  justify-content: space-between;
   margin-top: 20px;
 }
 main .blog .container .blog__cards .blog__card {
+  width: 33.3%;
   padding: 21px;
   position: relative;
   border-radius: 62px;
@@ -318,6 +316,9 @@ main .blog .container .blog__cards .blog__card {
 }
 main .blog .container .blog__cards .blog__card .blog__card--top {
   border-radius: 10px 10px 0px 0px;
+}
+main .blog .container .blog__cards .blog__card .blog__card--top img {
+  border-radius: 15% 15% 0 0;
 }
 main .blog .container .blog__cards .blog__card .blog__card--bottom .design__type {
   position: absolute;
@@ -329,7 +330,7 @@ main .blog .container .blog__cards .blog__card .blog__card--bottom .design__type
   left: 10%;
 }
 main .blog .container .blog__cards .blog__card h3 {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 305px;
 }
 main .blog .container .blog__cards .blog__card .date {
@@ -346,14 +347,6 @@ main .contact .contact__card {
   text-align: center;
   padding: 3rem;
   border-radius: 25px;
-}
-main .contact .contact__card h1 {
-  font-size: 50px;
-  font-family: DM serif Display;
-}
-main .contact .contact__card p {
-  font-family: jost-normal;
-  font-size: 22px;
 }
 main .contact .contact__card .card__button {
   display: flex;
@@ -388,13 +381,7 @@ main .background__div .counter .counter__text {
 }
 main .background__div .counter .counter__text h2 {
   text-align: center;
-  font-size: 84px;
-  font-family: DM serif Display;
   color: #CDA274;
-}
-main .background__div .counter .counter__text p {
-  font-size: 22px;
-  font-family: jost-normal;
 }
 
 footer .container .footer__content {
@@ -409,10 +396,30 @@ footer .container .footer__content .footer__pages ul, footer .container .footer_
 footer .container .footer__content .footer__pages ul li a, footer .container .footer__content .footer__services ul li a {
   color: black;
 }
+footer .container .footer__content .footer__icon {
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer .container .footer__content .footer__icon .logo {
+  align-items: center;
+}
 footer .container .footer__content .footer__icon .icons {
   gap: 54px;
 }
+footer .container .footer__content .footer__contact {
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer .container .footer__text {
+  margin-top: 100px;
+  text-align: center;
+}
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
 .container {
   width: 1200px;
   margin: 0 auto;

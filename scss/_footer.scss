@@ -16,10 +16,24 @@ footer{
                 }
             }
             .footer__icon{
+                justify-content: space-between;
+                flex-direction: column;
+                .logo{
+                    align-items: center;
+                }
                 .icons{
                     gap: 54px;
                 }
             }
+            .footer__contact{
+                justify-content: space-between;
+                flex-direction: column;
+
+            }
+        }
+        .footer__text{
+            margin-top:100px;
+            text-align: center;
         }
     }
 }

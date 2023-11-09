@@ -1,27 +1,18 @@
 main{
     .banner{
+        img{
+            border-radius: 0% 0% 0% 15%;
+        }
         margin: 0;
         position: relative;
         .container{
             .banner__content{
                 position: absolute;
                 top: 30%;
-                max-width: 567px;
+                max-width:29%;
                 display: flex;
                 flex-direction: column;
                 gap: 14.8px;
-                .banner__content--heading{
-                p{
-                   font-size: 84px; 
-                   font-family: DM serif Display;
-                }
-            }
-            .banner__content--para{
-                p{
-                   font-size: 22px; 
-                   font-family: jost-normal;
-                }
-            }
             .banner__content--button{
                 a{
                 button{
@@ -48,20 +39,12 @@ main{
         .container{
             padding: 0px 22px;
             .card__div{
-                justify-content: space-between;
+            gap: 42px;
                 .card{
                     display: flex;
                     flex-direction: column;
                     text-align: center;
-                    width: 358px;
-                    h1{
-                        font-size: 25px; 
-                        font-family: DM serif Display; 
-                    }
-                    p{
-                        font-size: 22px; 
-                   font-family: jost-normal;
-                    }
+                    width: 33%;
 
                 .card__button{
                     display: flex;
@@ -73,10 +56,6 @@ main{
                             display: flex;
                             gap: 5px;
                             align-items: center;
-                            p{
-                                font-size: 18px;
-                                font-family: jost-normal;
-                            }
                            
                         }
                     }
@@ -88,26 +67,16 @@ main{
     .contact__us{
         .container{
             .contact__content--div{
-                justify-content: space-between;
+                gap: 75px;
             .left__div{
-                width:472px;
-                // display: flex;
-                // flex-direction: column;
-                // gap: 14.8px;
+                width:50%;
+
                 .left__div--heading{
                     padding-right: 52px;
                     margin: 43px 33px 0px 0px;
-                p{
-                   font-size: 50px; 
-                   font-family: DM serif Display;
-                }
             }
             .left__div--para{
                 margin-bottom: 45px;
-                p{
-                   font-size: 22px; 
-                   font-family: jost-normal;
-                }
             }
             .left__div--call
             {
@@ -116,10 +85,14 @@ main{
                 gap: 15px;
                 margin-bottom: 47px;
                 p{
-                    font-family: jost-normal;
-                    font-size: 22px;
                     b{
                         font-size: 24px;
+                    }
+                    .right__div{
+                        width: 50%;
+                        img{
+                            border-radius: 0% 40%;
+                        }
                     }
                 }
             }
@@ -159,21 +132,18 @@ main{
             background-color: #F4F0EC;
             padding: 40px 0px;
             .content__heading{
-                font-size: 50px;
                 text-align: center;
                 width: 547px;
                 margin: 0 auto;
-                font-family: DM serif Display;
             }
             .cards{
                 margin-top: 38px;
                 padding: 0px 25px;
-                justify-content: space-between;
+                gap: 20px;
                 .card{
                     padding: 90px 37px;
-                    width: 370px;
+                    width: 33%;
                     border-radius: 20px;
-                    
                     background-color: white;
                     .card__top{
                         align-items: center;
@@ -196,22 +166,26 @@ main{
             width: 737px;
             margin: 0 auto;
             text-align: center;
-            h2{
-                font-size: 50px;
-                font-family: DM serif Display;
-            }
-            p{
-                font-size: 22px;
-                font-family: jost-normal;
-            }
         }
         .project__cards{
             flex-wrap: wrap;
-            justify-content: space-between;
+        gap: 104px;
             .project__card{
-                margin-top: 56px;
-                width: 550px;
-            
+                width: 45%;
+        .project__card--top{
+            .img1{
+                border-radius: 0% 15% 0% 0%;
+            }
+            .img2{
+                border-radius: 15% 0% 0% 0%;
+            }
+            .img3{
+                border-radius: 0% 0% 15% 0%;
+            }
+            .img4{
+                border-radius: 0% 0% 0% 15%;
+            }
+        }
         .project__card--bottom{
             justify-content: space-between;
             padding-top: 10px;
@@ -230,19 +204,11 @@ main{
                     width: 737px;
                     margin: 0 auto;
                     text-align: center;
-                    h2{
-                        font-size: 50px;
-                        font-family: DM serif Display;
-                    }
-                    p{
-                        font-size: 22px;
-                        font-family: jost-normal;
-                    }
             }
            .blog__cards{
-            justify-content: space-between;
             margin-top: 20px;
             .blog__card{
+                width: 33.3%;
                 padding: 21px;
                 position: relative;
                 border-radius: 62px;
@@ -250,6 +216,9 @@ main{
                 box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
                 .blog__card--top{
                     border-radius: 10px 10px 0px 0px;
+                    img{
+                        border-radius: 15% 15% 0 0;
+                    }
                 }
                 .blog__card--bottom{
                   .design__type{
@@ -263,7 +232,7 @@ main{
                     }
                 }
                  h3{
-                    margin-top: 10px;
+                    margin-top: 20px;
                     width: 305px;
                  }
              .date{
@@ -286,15 +255,6 @@ main{
             text-align: center;
             padding: 3rem;
             border-radius: 25px;
-            h1{
-                font-size: 50px;
-                font-family: DM serif Display;
-        
-            }
-            p{
-                font-family: jost-normal;
-                font-size: 22px;
-            }
             .card__button{
                 display: flex;
                 justify-content: center;
@@ -336,14 +296,9 @@ main{
                 border-right:1px solid #CDA274;
                 h2{
                     text-align: center;
-                    font-size: 84px;
-                    font-family: DM serif Display;
                     color: #CDA274;
                 }
-                p{
-                    font-size: 22px;
-                font-family: jost-normal;
-                }
+               
             }
         }
     }
