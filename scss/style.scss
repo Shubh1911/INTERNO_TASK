@@ -3,12 +3,3 @@
 @use './main';
 @use './footer';
 @use './media-queries';
-
-.container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0px;
-}
-.display__flex{
-    display: flex;
-}

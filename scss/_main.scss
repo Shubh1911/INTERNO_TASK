@@ -8,8 +8,9 @@ main{
         .container{
             .banner__content{
                 position: absolute;
-                top: 30%;
-                max-width:29%;
+                top: 50%;
+                transform: translateY(-50%);
+                width:567px;
                 display: flex;
                 flex-direction: column;
                 gap: 14.8px;
@@ -37,15 +38,18 @@ main{
     }
     .our__plans{
         .container{
-            padding: 0px 22px;
+            padding: 20px 22px;
             .card__div{
             gap: 42px;
                 .card{
-                    display: flex;
+                    width: 33%;
                     flex-direction: column;
                     text-align: center;
-                    width: 33%;
-
+                    gap: 54px;
+                .card__text{
+                    flex-direction: column;
+                    gap: 21px;
+                }
                 .card__button{
                     display: flex;
                     justify-content: center;
@@ -70,29 +74,21 @@ main{
                 gap: 75px;
             .left__div{
                 width:50%;
+                gap: 20px;
+                justify-content: space-around;
+                flex-direction: column;
 
                 .left__div--heading{
-                    padding-right: 52px;
-                    margin: 43px 33px 0px 0px;
-            }
-            .left__div--para{
-                margin-bottom: 45px;
+                    padding-right: 75px;
             }
             .left__div--call
             {
                 
                 align-items: center;
                 gap: 15px;
-                margin-bottom: 47px;
                 p{
                     b{
                         font-size: 24px;
-                    }
-                    .right__div{
-                        width: 50%;
-                        img{
-                            border-radius: 0% 40%;
-                        }
                     }
                 }
             }
@@ -116,6 +112,14 @@ main{
             }
             }
             }
+            .right__div{
+                width: 50%;
+
+                img{
+                    border-radius: 0% 35%;
+                }
+            }
+
         }
     }
     }
@@ -129,8 +133,9 @@ main{
     }
     .about__us{
         .about__us--content{
+            border-radius: 30px;
             background-color: #F4F0EC;
-            padding: 40px 0px;
+            padding: 40px 0px 60px 0px;
             .content__heading{
                 text-align: center;
                 width: 547px;
@@ -139,7 +144,10 @@ main{
             .cards{
                 margin-top: 38px;
                 padding: 0px 25px;
+               .slick-track{
+                display: flex;
                 gap: 20px;
+               
                 .card{
                     padding: 90px 37px;
                     width: 33%;
@@ -157,8 +165,10 @@ main{
                             margin-top: 24px;
                         }
                     }
+            
                 }
             }
+        }
         }
     }
     .our__project{
@@ -169,9 +179,10 @@ main{
         }
         .project__cards{
             flex-wrap: wrap;
-        gap: 104px;
+        justify-content: space-between;
             .project__card{
-                width: 45%;
+                margin-top:50px;
+                width: 44%;
         .project__card--top{
             .img1{
                 border-radius: 0% 15% 0% 0%;
@@ -207,6 +218,7 @@ main{
             }
            .blog__cards{
             margin-top: 20px;
+            gap: 21px;
             .blog__card{
                 width: 33.3%;
                 padding: 21px;
@@ -215,26 +227,30 @@ main{
                 border: 1px solid #E7E7E7;
                 box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
                 .blog__card--top{
+                    position: relative;
                     border-radius: 10px 10px 0px 0px;
                     img{
                         border-radius: 15% 15% 0 0;
                     }
+                    .design__type{
+                        position: absolute;
+                    
+                            width: max-content;
+                        padding: 5px 3px;
+                        background: white;
+                        bottom: 10px;
+                        transform: translateY(-50%);
+                        left: 10px;
+                        }
                 }
                 .blog__card--bottom{
-                  .design__type{
-                    position: absolute;
+                 
                 
-                        width: max-content;
-                    padding: 5px 3px;
-                    background: white;
-                    top: 58%;
-                    left: 10%;
-                    }
-                }
-                 h3{
+                 h4{
                     margin-top: 20px;
-                    width: 305px;
+                    
                  }
+                }
              .date{
                 align-items: center;
                 justify-content: space-between;
@@ -260,11 +276,6 @@ main{
                 justify-content: center;
                 a{
                     button{
-                        // border: none;
-                        // background: #CDA274;
-                        // display: flex;
-                        // gap: 5px;
-                        // align-items: center;
                         margin-top: 32px;
                         border-radius: 18px;
                         border: none;
@@ -279,6 +290,9 @@ main{
                             color: white;
                             font-family: jost-normal;
                         }
+                        img{
+                            padding: 10px;
+                        }
                        
                     }
                 }
@@ -292,13 +306,22 @@ main{
             justify-content: space-around;
             padding: 9.5rem 0rem;
             .counter__text{
-                padding: 0px 40px;
+                padding: 0px 60px 0 0px;
                 border-right:1px solid #CDA274;
-                h2{
-                    text-align: center;
+                text-align: center;
+                width: 33%;
+                h1{
                     color: #CDA274;
                 }
+               .counter__text:nth-child(4)
+                {
+                    border: none;
+                }
                
+            }
+            :nth-child(4)
+            {
+                border-right: none;
             }
         }
     }

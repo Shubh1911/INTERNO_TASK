@@ -1,13 +1,17 @@
 footer{
+    margin-top: 5rem;
     .container{
         .footer__content{
-            justify-content: space-between;
+            gap: 100px;
+            .footer__lists{
+                width: 33%;
+                justify-content: space-around;
             .footer__pages,.footer__services{
                 ul{
                     margin-top: 10px;
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    gap: 25px;
                     li{
                         a{
                             color: black;
@@ -15,7 +19,9 @@ footer{
                     }
                 }
             }
+        }
             .footer__icon{
+                width: 33%;
                 justify-content: space-between;
                 flex-direction: column;
                 .logo{
@@ -26,8 +32,15 @@ footer{
                 }
             }
             .footer__contact{
+                width: 33%;
+                &__data{
                 justify-content: space-between;
                 flex-direction: column;
+                gap: 50px;
+                p{
+                    padding-right:45px;
+                }
+                }
 
             }
         }

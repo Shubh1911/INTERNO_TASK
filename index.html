@@ -1,481 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css"/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/nav.js"></script>
+    
+    <!-- Title of the page -->
     <title>Interno</title>
   </head>
   <body>
     <!-- Header Section starts from here-->
     <header>
       <div class="container">
-      <nav class="nav__bar  display__flex">
+        <!-- Navbar starts from here -->
+        <nav class="nav__bar  display__flex">
+          <!-- Logo section -->
+          <div class="logo  display__flex">
+            <div class="logo__img">
+              <img src="./images/Logo.svg" alt="logo">
+            </div>
+            <div class="logo__text">
+              <h3>Interno</h3>
+            </div>
+          </div>
+          <!-- Horizontal list section -->
+          <div class="horizontal__list  display__flex">
+            <!-- Navigation links -->
+            <ul class="nav__list  display__flex">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Blod</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- Search icon -->
+            <div class="search__icon">
+              <img src="./images/Search.svg" alt="search">
+            </div>
+          </div>
+          <!-- Toggle button for responsive design -->
+          <i class="fa-solid fa-bars" id="toggleBtn"></i>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- Header Section ends here-->
+
+    <main>
+      <section class="banner">
+        <!-- Banner image -->
+        <img class="banner__image" src="./images/Photo.jpg" alt="banner image" width="100%" height="auto">
+        <div class="container">
+          <div class="banner__content">
+            <!-- Banner heading -->
+            <div class="banner__content--heading">
+              <h1>Let Your Home Be Unique</h1>
+            </div>
+            <!-- Banner paragraph -->
+            <div class="banner__content--para">
+              <p>There are many variations of the passages of lorem Ipsum from available, variations of the passages.</p>
+            </div>
+            <!-- Banner button -->
+            <div class="banner__content--button">
+              <a href="#">
+                <button class="btn">
+                  <p>Get Started</p>
+                  <img src="./images/Vector.svg" alt="arrow">
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="our__plans">
+        <div class="container">
+          <div class="card__div  display__flex">
+            <!-- First Card -->
+            <div class="card  display__flex">
+              <div class="card__text  display__flex">
+                <h4>Project Plan</h4>
+                <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
+              </div>
+              <div class="card__button">
+                <a href="#">
+                  <button class="btn">
+                    <p>Get Started</p>
+                    <img src="./images/Vector.svg" alt="arrow">
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- Second Card -->
+            <div class="card  display__flex">
+              <div class="card__text display__flex">
+                <h4>Project Plan</h4>
+                <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
+              </div>
+              <div class="card__button">
+                <a href="#">
+                  <button class="btn">
+                    <p>Get Started</p>
+                    <img src="./images/Vector.svg" alt="arrow">
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- Third Card -->
+            <div class="card  display__flex">
+              <div class="card__text  display__flex">
+                <h4>Project Plan</h4>
+                <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
+              </div>
+              <div class="card__button">
+                <a href="#">
+                  <button class="btn">
+                    <p>Get Started</p>
+                    <img src="./images/Vector.svg" alt="arrow">
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<!-- Contact Us Section Starts -->
+<section class="contact__us">
+  <div class="container">
+    <div class="contact__content--div display__flex">
+      <!-- Left Side Content -->
+      <div class="left__div  display__flex">
+        <div class="left__div--heading">
+          <h2>We Create The Art Of Stylish Living Stylishly</h2>
+        </div>
+        <div class="left__div--para">
+          <p>It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.</p>
+        </div>
+        <div class="left__div--call  display__flex">
+          <div class="call__icon">
+            <img src="./images/Call Icon.png" alt="call icon">
+          </div>
+          <div class="call__number">
+            <p><b>012345678</b></p>
+            <p>Call Us Anytime</p>
+          </div>
+        </div>
+        <div class="left__div--button">
+          <a href="#">
+            <button class="btn">
+              <p>Get Started</p>
+              <img src="./images/Vector.svg" alt="arrow">
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Right Side Content -->
+      <div class="right__div">
+        <img src="./images/Photo1.jpg" alt="img">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about__us">
+  <div class="container">
+    <div class="about__us--content">
+      <!-- Section Heading -->
+      <div class="content__heading">
+        <h2>What the People Think About Us</h2>
+      </div>
+      <!-- Cards Display -->
+      <div class="cards slider display__flex">
+        <!-- First Card -->
+        <div class="card">
+          <div class="card__top display__flex">
+            <div class="card__img">
+              <img src="./images/nattasha.jpg" alt="card image">
+            </div>
+            <div class="card__text">
+              <h4>Nattasha Mith</h4>
+              <p>Sydney, USA</p>
+            </div>
+          </div>
+          <div class="card__bottom">
+            <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div class="card">
+          <div class="card__top display__flex">
+            <div class="card__img">
+              <img src="./images/raymond.jpg" alt="card image">
+            </div>
+            <div class="card__text">
+              <h4>Nattasha Mith</h4>
+              <p>Sydney, USA</p>
+            </div>
+          </div>
+          <div class="card__bottom">
+            <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
+          </div>
+        </div>
+        <!-- Third Card -->
+        <div class="card">
+          <div class="card__top display__flex">
+            <div class="card__img">
+              <img src="./images/benny.jpg" alt="card image">
+            </div>
+            <div class="card__text">
+              <h4>Nattasha Mith</h4>
+              <p>Sydney, USA</p>
+            </div>
+          </div>
+          <div class="card__bottom">
+            <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="brand__div">
+  <div class="container">
+    <div class="client__logo display__flex">
+      <!-- Logo 01 -->
+      <div class="logo">
+        <img src="./images/01.svg" alt="home">
+      </div>
+      <!-- Logo 02 -->
+      <div class="logo">
+        <img src="./images/02.svg" alt="vs">
+      </div>
+      <!-- Logo 03 -->
+      <div class="logo">
+        <img src="./images/03.svg" alt="brand">
+      </div>
+      <!-- Logo 04 -->
+      <div class="logo">
+        <img src="./images/04.svg" alt="nature">
+      </div>
+      <!-- Logo 05 -->
+      <div class="logo">
+        <img src="./images/05.svg" alt="classic">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our__project">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="heading">
+      <h2>Follow Our Projects</h2>
+      <p>It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.</p>
+    </div>
+    <!-- Project Cards -->
+    <div class="project__cards display__flex">
+      <!-- First Project Card -->
+      <div class="project__card">
+        <div class="project__card--top">
+          <img src="./images/project1.png" alt="image" class="img1">
+        </div>
+        <div class="project__card--bottom display__flex">
+          <div class="text">
+            <h4>Modern Kitchen</h4>
+            <p>Decor / Architecture</p>
+          </div>
+          <div class="project__card--button">
+            <a href="#">
+              <button class="btn"> 
+                <img src="./images/arrow.png" alt="arrow">
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Second Project Card -->
+      <div class="project__card">
+        <div class="project__card--top">
+          <img src="./images/project2.png" alt="image" class="img2">
+        </div>
+        <div class="project__card--bottom display__flex">
+          <div class="text">
+            <h4>Modern Kitchen</h4>
+            <p>Decor / Architecture</p>
+          </div>
+          <div class="project__card--button">
+            <a href="#">
+              <button class="btn"> 
+                <img src="./images/arrow.png" alt="arrow">
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Third Project Card -->
+      <div class="project__card">
+        <div class="project__card--top">
+          <img src="./images/project3.png" alt="image" class="img3">
+        </div>
+        <div class="project__card--bottom display__flex">
+          <div class="text">
+            <h4>Modern Kitchen</h4>
+            <p>Decor / Architecture</p>
+          </div>
+          <div class="project__card--button">
+            <a href="#">
+              <button class="btn"> 
+                <img src="./images/arrow.png" alt="arrow">
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth Project Card -->
+      <div class="project__card">
+        <div class="project__card--top">
+          <img src="./images/project4.png" alt="image" class="img4">
+        </div>
+        <div class="project__card--bottom display__flex">
+          <div class="text">
+            <h4>Modern Kitchen</h4>
+            <p>Decor / Architecture</p>
+          </div>
+          <div class="project__card--button">
+            <a href="#">
+              <button class="btn"> 
+                <img src="./images/arrow.png" alt="arrow">
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="background__div">
+  <div class="container">
+    <!-- Counter Section -->
+    <div class="counter display__flex">
+      <!-- First Counter -->
+      <div class="counter__text">
+        <h1>12</h1>
+        <p>Years of Experience</p>
+      </div>
+      <!-- Second Counter -->
+      <div class="counter__text">
+        <h1>85</h1>
+        <p>Success Projects</p>
+      </div>
+      <!-- Third Counter -->
+      <div class="counter__text">
+        <h1>15</h1>
+        <p>Active Projects</p>
+      </div>
+      <!-- Fourth Counter -->
+      <div class="counter__text">
+        <h1>95</h1>
+        <p>Happy Customers</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="blog">
+  <div class="container">
+    <!-- Blog Heading -->
+    <div class="blog__heading">
+      <h2>Follow Our Projects</h2>
+      <p>It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.</p>
+    </div>
+    <!-- Blog Cards -->
+    <div class="blog__cards display__flex">
+      <!-- First Blog Card -->
+      <div class="blog__card">
+        <div class="blog__card--top">
+          <img src="./images/img1.png" alt="image">
+          <div class="design__type">
+            <p>Kitchen Design</p>
+          </div>
+        </div>
+        <div class="blog__card--bottom">
+          <h4>Let’s Get Solution For Building Construction Work</h4>
+          <div class="date display__flex">
+            <div class="text">
+              <p>26 December, 2022</p>
+            </div>
+            <div class="blog__card--button">
+              <a href="#">
+                <button class="btn"> 
+                  <img src="./images/arrow.png" alt="arrow">
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Blog Card -->
+      <div class="blog__card">
+        <div class="blog__card--top">
+          <img src="./images/img2.png" alt="image">
+          <div class="design__type">
+            <p>Kitchen Design</p>
+          </div>
+        </div>
+        <div class="blog__card--bottom">
+          <h4>Let’s Get Solution For Building Construction Work</h4>
+          <div class="date display__flex">
+            <div class="text">
+              <p>26 December, 2022</p>
+            </div>
+            <div class="blog__card--button">
+              <a href="#">
+                <button class="btn"> 
+                  <img src="./images/arrow.png" alt="arrow">
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third Blog Card -->
+      <div class="blog__card">
+        <div class="blog__card--top">
+          <img src="./images/img3.png" alt="image">
+          <div class="design__type">
+            <p>Kitchen Design</p>
+          </div>
+        </div>
+        <div class="blog__card--bottom">
+          <h4>Let’s Get Solution For Building Construction Work</h4>
+          <div class="date display__flex">
+            <div class="text">
+              <p>26 December, 2022</p>
+            </div>
+            <div class="blog__card--button">
+              <a href="#">
+                <button class="btn"> 
+                  <img src="./images/arrow.png" alt="arrow">
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="contact__card">
+      <!-- Contact Card Heading -->
+      <h2>Wanna join the Interno?</h2>
+      <p>It is a long established fact will be distracted.</p>
+      <!-- Contact Card Button -->
+      <div class="card__button">
+        <a href="#">
+          <button class="btn">
+            <p>Contact with us</p>
+            <img src="./images/Vector.png" alt="arrow">
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer__content  display__flex">
+      <div class="footer__icon display__flex">
         <div class="logo  display__flex">
           <div class="logo__img">
             <img src="./images/Logo.svg" alt="logo">
           </div>
           <div class="logo__text">
-          <h3>Interno</h3>
+          <h3>Interno<h3>
           </div>
-        </div>
-<div class="horizontal__list  display__flex">
-        <ul class="display__flex">
-          <li><a href="#">Home</a></li>
+      </div>
+      <p>It is a long established fact that a reader will be distracted lookings.</p>
+      <div class="icons display__flex">
+     <img src="./images/.png" alt="facebbok">
+<img src="./images/.png" alt="twitter">
+<img src="./images/.png" alt="linkedin">
+<img src="./images/.png" alt="insta">
+
+      </div>
+      </div>
+      
+      <div class="footer__lists  display__flex">
+      <div class="footer__pages">
+        <h4>Pages</h4>
+        <ul class="">
           <li><a href="#">Pages</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Project</a></li>
           <li><a href="#">Blod</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <div class="search__icon">
-          <img src="./images/Search.svg" alt="search">
-        </div>
-        </div>
-      </nav>
-    </div>
-    </header>
-    <!-- Header Section ends here-->
-
-    <main>
-      <section class="banner">
-          <img class="banner__image" src="./images/Photo.jpg" alt="banner image" width="100%" height="auto">
-          <div class="container">
-          <div class="banner__content">
-            <div class="banner__content--heading">
-            <h1>Let Your Home Be Unique </h1>
-            </div>
-            <div class="banner__content--para">
-            <p>There are many variations of the passages of lorem Ipsum from available,variations of the passages.</p>
-          </div>
-          <div class="banner__content--button">
-           <a href="#">
-            <button class="btn"> <p>Get Started</p>
-<img src="./images/Vector.svg" alt="arrow">
-            </button>
-           </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="our__plans">
-        <div class="container">
-          <div class="card__div  display__flex">
-          <div class="card">
-            <div class="card__text">
-            <h4>Project Plan</h4>
-            <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
-            </div>
-            <div class="card__button">
-              <a href="#">
-                <button class="btn"> <p>Get Started</p>
-    <img src="./images/Vector.svg" alt="arrow">
-                </button>
-               </a>
-            </div>
-          </div>
-          <!--Second Content-->
-          <div class="card">
-            <div class="card__text">
-            <h4>Project Plan</h4>
-            <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
-            </div>
-            <div class="card__button">
-              <a href="#">
-                <button class="btn"> <p>Get Started</p>
-    <img src="./images/Vector.svg" alt="arrow">
-                </button>
-               </a>
-            </div>
-          </div>
-          <!--Third Content-->
-          <div class="card">
-            <div class="card__text">
-            <h4>Project Plan</h4>
-            <p>There are many variations of the passages of lorem Ipsum from available, majority.</p>
-            </div>
-            <div class="card__button">
-              <a href="#">
-                <button class="btn"> <p>Get Started</p>
-    <img src="./images/Vector.svg" alt="arrow">
-                </button>
-               </a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact__us">
-        <div class="container">
-          <div class="contact__content--div display__flex">
-            <div class="left__div">
-                <div class="left__div--heading">
-                <h2>We Create The Art Of Stylish Living Stylishly</h2>
-                </div>
-                <div class="left__div--para">
-                <p>It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.</p>
-              </div>
-              <div class="left__div--call  display__flex">
-                <div class="call__icon">
-                  <img src="./images/Call Icon.png" alt="call icon">
-                </div>
-                <div class="call__number">
-                  <p><b>012345678</b></p>
-                  <p>Call Us Anytime</p>
-                </div>
-              </div>
-              <div class="left__div--button">
-               <a href="#">
-                <button class="btn"> <p>Get Started</p>
-    <img src="./images/Vector.svg" alt="arrow">
-                </button>
-               </a>
-              </div>
-            </div>
-            <div class="right__div">
-              <img src="./images/Photo1.jpg" alt="img">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about__us">
-        <div class="container">
-          <div class="about__us--content">
-            <div class="content__heading">
-              <h2>What the People Thinks About Us</h2>
-            </div>
-            <div class="cards display__flex">
-              <div class="card">
-                <div class="card__top  display__flex">
-                <div class="card__img">
-                  <img src="./images/nattasha.jpg" alt="card image">
-                </div>
-                <div class="card__text">
-                  <h4>Nattasha Mith</h4>
-                  <p>Sydney, USA</p>
-                </div>
-                </div>
-                <div class="card__bottom">
-                  <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card__top  display__flex">
-                <div class="card__img">
-                  <img src="./images/raymond.jpg" alt="card image">
-                </div>
-                <div class="card__text">
-                  <h4>Nattasha Mith</h4>
-                  <p>Sydney, USA</p>
-                </div>
-                </div>
-                <div class="card__bottom">
-                  <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card__top display__flex">
-                <div class="card__img">
-                  <img src="./images/benny.jpg" alt="card image">
-                </div>
-                <div class="card__text">
-                  <h4>Nattasha Mith</h4>
-                  <p>Sydney, USA</p>
-                </div>
-                </div>
-                <div class="card__bottom">
-                  <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="brand__div">
-                <div class="container">
-                  <div class="client__logo display__flex">
-                    <div class="logo">
-                      <img src="./images/01.svg" alt="home">
-                    </div>
-                    <div class="logo">
-                      <img src="./images/02.svg" alt="vs">
-                    </div>
-                    <div class="logo">
-                      <img src="./images/03.svg" alt="brand">
-                    </div>
-                    <div class="logo">
-                      <img src="./images/04.svg" alt="nature">
-                    </div>
-                    <div class="logo">
-                      <img src="./images/05.svg" alt="classic">
-                    </div>
-                  
-                  </div>
-                </div>
-      </section>
-      <section class="our__project">
-        <div class="container">
-          <div class="heading">
-            <h2>Follow Our Projects</h2>
-            <p>It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.
-            </p>
-          </div>
-          <div class="project__cards display__flex">
-            <div class="project__card">
-              <div class="project__card--top">
-                <img src="./images/project1.png" alt="image" class="img1">
-              </div>
-              <div class="project__card--bottom display__flex">
-                <div class="text">
-                  <h4>Modern Kitchen</h4>
-                  <p>Decor / Artchitecture</p>
-
-                </div>
-                <div class="project__card--button">
-                  <a href="#">
-                    <button class="btn"> 
-                       <img src="./images/arrow.png" alt="arrow">
-                    </button>
-                   </a>
-                </div>
-              </div>
-            </div>
-            <div class="project__card">
-              <div class="project__card--top">
-                <img src="./images/project2.png" alt="" class="img2" >
-              </div>
-              <div class="project__card--bottom display__flex">
-                <div class="text">
-                  <h4>Modern Kitchen</h4>
-                  <p>Decor / Artchitecture</p>
-
-                </div>
-                <div class="project__card--button">
-                  <a href="#">
-                    <button class="btn"> 
-                       <img src="./images/arrow.png" alt="arrow">
-                    </button>
-                   </a>
-                </div>
-              </div>
-            </div>
-            <div class="project__card">
-              <div class="project__card--top">
-                <img src="./images/project3.png" alt="image" class="img3" >
-              </div>
-              <div class="project__card--bottom display__flex">
-                <div class="text">
-                  <h4>Modern Kitchen</h4>
-                  <p>Decor / Artchitecture</p>
-
-                </div>
-                <div class="project__card--button">
-                  <a href="#">
-                    <button class="btn"> 
-                       <img src="./images/arrow.png" alt="arrow">
-                    </button>
-                   </a>
-                </div>
-              </div>
-            </div>
-            <div class="project__card">
-              <div class="project__card--top">
-                <img src="./images/project4.png" alt="image" class="img4">
-              </div>
-              <div class="project__card--bottom display__flex">
-                <div class="text">
-                  <h4>Modern Kitchen</h4>
-                  <p>Decor / Artchitecture</p>
-
-                </div>
-                <div class="project__card--button">
-                  <a href="#">
-                    <button class="btn"> 
-                       <img src="./images/arrow.png" alt="arrow">
-                    </button>
-                   </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="background__div">
-        <div class="container">
-          <div class="counter  display__flex">
-            <div class="counter__text">
-              <h1>12</h1>
-              <p>Years of Experience</p>
-            </div>
-            <div class="counter__text">
-              <h1>85</h1>
-              <p>Success Project</p>
-            </div>
-            <div class="counter__text">
-              <h1>15</h1>
-              <p>Active Projects</p>
-            </div>
-            <div class="counter__text">
-              <h1>95</h1>
-              <p>Happy Customers</p>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-      <section class="blog">
-        <div class="container">
-          <div class="blog__heading">
-            <h2>Follow Our Projects</h2>
-            <p>It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.
-            </p>
-          </div>
-          <div class="blog__cards display__flex">
-            <div class="blog__card">
-              <div class="blog__card--top">
-                <img src="./images/img1.png" alt="image">
-              </div>
-              <div class="blog__card--bottom">
-                <div class="design__type">
-                  <p>Kitchan Design</p>
-                </div>
-                <h4>Let’s Get Solution For Building Construction Work</h4>
-               <div class="date display__flex">
-
-                <div class="text">
-                  <p>26 December,2022</p>
-
-                </div>
-                <div class="blog__card--button">
-                  <a href="#">
-                    <button class="btn"> 
-                       <img src="./images/arrow.png" alt="arrow">
-                    </button>
-                   </a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="blog__card">
-              <div class="blog__card--top">
-                <img src="./images/img2.png" alt="image">
-              </div>
-              <div class="blog__card--bottom">
-                <div class="design__type">
-                  <p>Kitchan Design</p>
-                </div>
-                <h4>Let’s Get Solution For Building Construction Work</h4>
-               <div class="date display__flex">
-
-                <div class="text">
-                  <p>26 December,2022</p>
-
-                </div>
-                <div class="blog__card--button">
-                  <a href="#">
-                    <button class="btn"> 
-                       <img src="./images/arrow.png" alt="arrow">
-                    </button>
-                   </a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="blog__card">
-              <div class="blog__card--top">
-                <img src="./images/img3.png" alt="image">
-              </div>
-              <div class="blog__card--bottom">
-                <div class="design__type">
-                  <p>Kitchan Design</p>
-                </div>
-                <h4>Let’s Get Solution For Building Construction Work</h4>
-               <div class="date display__flex">
-
-                <div class="text">
-                  <p>26 December,2022</p>
-
-                </div>
-                <div class="blog__card--button">
-                  <a href="#">
-                    <button class="btn"> 
-                       <img src="./images/arrow.png" alt="arrow">
-                    </button>
-                   </a>
-                </div>
-               </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-<div class="container">
-  <div class="contact__card">
-    <h2>Wanna join the interno?</h2>
-    <p>It is a long established fact will be distracted.
-    </p>
-    <div class="card__button">
-      <a href="#">
-        <button class="btn"> <p>contact with us</p>
-<img src="./images/Vector.png" alt="arrow">
-        </button>
-       </a>
-    </div>
-  </div>
-</div>
-      </section>
-    <footer>
-      <div class="container">
-        <div class="footer__content  display__flex">
-          <div class="footer__icon display__flex">
-            <div class="logo  display__flex">
-              <div class="logo__img">
-                <img src="./images/Logo.svg" alt="logo">
-              </div>
-              <div class="logo__text">
-              <h3>Interno<h3>
-              </div>
-          </div>
-          <p>It is a long established fact that a reader <br> will be distracted lookings.</p>
-          <div class="icons display__flex">
-         <img src="./images/.png" alt="facebbok">
-<img src="./images/.png" alt="twitter">
-<img src="./images/.png" alt="linkedin">
-<img src="./images/.png" alt="insta">
-
-          </div>
-          </div>
-          <div class="footer__pages">
-            <h4>Pages</h4>
-            <ul class="">
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Project</a></li>
-              <li><a href="#">Blod</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer__services">
-            <h4>Pages</h4>
-            <ul class="">
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Project</a></li>
-              <li><a href="#">Blod</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer__contact display__flex">
-            <h4>Contact</h4>
-            <p>55 East Birchwood Ave.<br>Brooklyn, New York 11201 </p>
-            <p>contact@interno.com</p>
-            <p>(123) 456 - 7890</p>
-          </div>
-        </div>
-        <div class="footer__text">
-          <p>Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</p>
+      </div>
+    
+      <div class="footer__services">
+        <h4>Pages</h4>
+        <ul class="">
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Blod</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="footer__contact ">
+        <h4>Contact</h4>
+        <div class="footer__contact__data display__flex">
+        <p>55 East Birchwood Ave.Brooklyn, New York 11201 </p>
+        <p>contact@interno.com</p>
+        <p>(123) 456 - 7890</p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="footer__text">
+      <p>Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</p>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
