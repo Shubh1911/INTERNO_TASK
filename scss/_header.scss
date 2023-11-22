@@ -1,33 +1,40 @@
-@use './typography';
-header{
-    nav{
-    justify-content: space-between;
-    align-items: center;
-        .logo{
-            align-items: center;
+/* Styling for header */
+header {
+    /* Navigation styles */
+    nav {
+        justify-content: space-between; 
+        align-items: center; 
         
-            .logo__text{
-          padding: 0px 11px;
+        /* Logo styles */
+        .logo {
+            align-items: center; 
+            
+            /* Logo text styles */
+            .logo__text {
+                padding: 0px 11px; 
+            }
         }
-    }
-    .horizontal__list{
-        gap: 31px;
-        ul{
-            gap: 48px;
-            li{
-                a{
-                    font-size: 20px;
-                    font-family: jost-normal;
-                    font-weight: 400;
-                    color: black;
+        
+        /* Horizontal list styles */
+        .horizontal__list {
+            gap: 31px; 
+            
+            /* Unordered list styles */
+            ul {
+                gap: 48px; 
+                li{
+                    a{
+                        color: black;
+                    }
                 }
             }
         }
-    }
-    #toggleBtn{
-        display: none;
-        font-size: 30px;
-    }
-
+        
+        /* Toggle button styles */
+        #toggleBtn {
+            display: none; 
+            font-size: 30px; 
+            
+        }
     }
 }

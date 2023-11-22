@@ -7,3 +7,10 @@
     font-family:jost-normal;
     src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
 }
+
+/* Inside your CSS file (e.g., styles.css) */
+@font-face {
+    font-family: 'Slick';
+    src: url('../vendor/fonts/slick.woff') format('woff'),
+         url('../vendor/fonts/slick.ttf') format('truetype');
+}

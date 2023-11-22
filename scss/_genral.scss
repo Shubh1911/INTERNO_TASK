@@ -19,6 +19,13 @@ ol[role='list'] {
 }
 ul{
     list-style-type: none;
+    li{
+      a{
+        font-family: jost-normal;
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
 }
 /* Set core root defaults */
 html:focus-within {
@@ -61,9 +68,9 @@ picture,svg {
 a{
     text-decoration: none;
 }
-section{
-  margin-top: 5rem;
-}
+// section{
+//   margin-top: 134px;
+// }
 p{
   font-family: jost-normal;
   font-size: 18px;

@@ -29,6 +29,11 @@ ol[role=list] {
 ul {
   list-style-type: none;
 }
+ul li a {
+  font-family: jost-normal;
+  font-weight: 400;
+  font-size: 20px;
+}
 
 /* Set core root defaults */
 html:focus-within {
@@ -77,10 +82,6 @@ a {
   text-decoration: none;
 }
 
-section {
-  margin-top: 5rem;
-}
-
 p {
   font-family: jost-normal;
   font-size: 18px;
@@ -124,26 +125,32 @@ h4 {
   display: flex;
 }
 
+/* Styling for header */
+header {
+  /* Navigation styles */
+}
 header nav {
   justify-content: space-between;
   align-items: center;
+  /* Logo styles */
+  /* Horizontal list styles */
+  /* Toggle button styles */
 }
 header nav .logo {
   align-items: center;
+  /* Logo text styles */
 }
 header nav .logo .logo__text {
   padding: 0px 11px;
 }
 header nav .horizontal__list {
   gap: 31px;
+  /* Unordered list styles */
 }
 header nav .horizontal__list ul {
   gap: 48px;
 }
 header nav .horizontal__list ul li a {
-  font-size: 20px;
-  font-family: jost-normal;
-  font-weight: 400;
   color: black;
 }
 header nav #toggleBtn {
@@ -167,7 +174,8 @@ main .banner .container .banner__content {
   flex-direction: column;
   gap: 14.8px;
 }
-main .banner .container .banner__content .banner__content--button a button {
+main .banner .container .banner__content .banner__content--button a .btn {
+  width: 145px;
   border-radius: 18px;
   border: none;
   background-color: #292F36;
@@ -177,10 +185,13 @@ main .banner .container .banner__content .banner__content--button a button {
   padding: 1rem;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
 }
-main .banner .container .banner__content .banner__content--button a button p {
+main .banner .container .banner__content .banner__content--button a .btn p {
   font-size: 18px;
   font-family: jost-normal;
-  color: white;
+  color: #FFFFFF;
+}
+main .our__plans {
+  margin: 200px 0px;
 }
 main .our__plans .container {
   padding: 20px 22px;
@@ -202,12 +213,18 @@ main .our__plans .container .card__div .card .card__button {
   display: flex;
   justify-content: center;
 }
-main .our__plans .container .card__div .card .card__button a button {
+main .our__plans .container .card__div .card .card__button a .btn {
   border: none;
   background: none;
   display: flex;
   gap: 5px;
   align-items: center;
+}
+main .our__plans .container .card__div .card .card__button a .btn p {
+  color: black;
+}
+main .contact__us {
+  margin-bottom: 200px;
 }
 main .contact__us .container .contact__content--div {
   gap: 75px;
@@ -228,7 +245,8 @@ main .contact__us .container .contact__content--div .left__div .left__div--call 
 main .contact__us .container .contact__content--div .left__div .left__div--call p b {
   font-size: 24px;
 }
-main .contact__us .container .contact__content--div .left__div .left__div--button a button {
+main .contact__us .container .contact__content--div .left__div .left__div--button a .btn {
+  width: 145px;
   border-radius: 18px;
   border: none;
   background-color: #292F36;
@@ -238,10 +256,10 @@ main .contact__us .container .contact__content--div .left__div .left__div--butto
   padding: 1rem;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
 }
-main .contact__us .container .contact__content--div .left__div .left__div--button a button p {
+main .contact__us .container .contact__content--div .left__div .left__div--button a .btn p {
   font-size: 18px;
   font-family: jost-normal;
-  color: white;
+  color: #FFFFFF;
 }
 main .contact__us .container .contact__content--div .right__div {
   width: 50%;
@@ -249,10 +267,16 @@ main .contact__us .container .contact__content--div .right__div {
 main .contact__us .container .contact__content--div .right__div img {
   border-radius: 0% 35%;
 }
+main .brand__div {
+  margin-bottom: 150px;
+}
 main .brand__div .client__logo {
   justify-content: space-between;
   align-items: center;
   padding: 0px 55px;
+}
+main .about__us {
+  margin-bottom: 150px;
 }
 main .about__us .about__us--content {
   border-radius: 30px;
@@ -276,7 +300,7 @@ main .about__us .about__us--content .cards .slick-track .card {
   padding: 90px 37px;
   width: 33%;
   border-radius: 20px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 main .about__us .about__us--content .cards .slick-track .card .card__top {
   align-items: center;
@@ -287,6 +311,15 @@ main .about__us .about__us--content .cards .slick-track .card .card__top img {
 }
 main .about__us .about__us--content .cards .slick-track .card .card__bottom p {
   margin-top: 24px;
+}
+main .about__us .about__us--content .slick-dots {
+  bottom: -50px !important;
+}
+main .about__us .about__us--content .slick-dots li button::before {
+  font-size: 50px;
+}
+main .our__project {
+  margin-bottom: 150px;
 }
 main .our__project .heading {
   width: 737px;
@@ -321,6 +354,9 @@ main .our__project .project__cards .project__card .project__card--bottom .btn {
   border: none;
   border-radius: 50%;
 }
+main .blog {
+  margin-bottom: 200px;
+}
 main .blog .container .blog__heading {
   width: 737px;
   margin: 0 auto;
@@ -350,7 +386,7 @@ main .blog .container .blog__cards .blog__card .blog__card--top .design__type {
   width: -moz-max-content;
   width: max-content;
   padding: 5px 3px;
-  background: white;
+  background: #FFFFFF;
   bottom: 10px;
   transform: translateY(-50%);
   left: 10px;
@@ -362,13 +398,13 @@ main .blog .container .blog__cards .blog__card .date {
   align-items: center;
   justify-content: space-between;
 }
-main .blog .container .blog__cards .blog__card .date button {
+main .blog .container .blog__cards .blog__card .date .btn {
   background: none;
   border: none;
 }
 main .contact .contact__card {
-  background-color: black;
-  color: white;
+  background-color: #292F36;
+  color: #FFFFFF;
   text-align: center;
   padding: 3rem;
   border-radius: 25px;
@@ -377,7 +413,7 @@ main .contact .contact__card .card__button {
   display: flex;
   justify-content: center;
 }
-main .contact .contact__card .card__button a button {
+main .contact .contact__card .card__button a .btn {
   margin-top: 32px;
   border-radius: 18px;
   border: none;
@@ -388,15 +424,16 @@ main .contact .contact__card .card__button a button {
   padding: 1rem;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
 }
-main .contact .contact__card .card__button a button p {
+main .contact .contact__card .card__button a .btn p {
   font-size: 18px;
-  color: white;
+  color: #FFFFFF;
   font-family: jost-normal;
 }
-main .contact .contact__card .card__button a button img {
+main .contact .contact__card .card__button a .btn img {
   padding: 10px;
 }
 main .background__div {
+  margin-bottom: 200px;
   background-color: #F4F0EC;
 }
 main .background__div .counter {
@@ -419,29 +456,44 @@ main .background__div .counter :nth-child(4) {
   border-right: none;
 }
 
+/* Styling for the footer */
 footer {
-  margin-top: 5rem;
+  margin-top: 134px;
+  /* Styles for the content container within the footer */
+}
+footer .container {
+  /* Styles for the main content of the footer */
+  /* Styles for the text section at the bottom of the footer */
 }
 footer .container .footer__content {
   gap: 100px;
+  /* Styles for the lists in the footer */
+  /* Styles for the icon section in the footer */
+  /* Styles for the contact section in the footer */
 }
 footer .container .footer__content .footer__lists {
   width: 33%;
   justify-content: space-around;
+  /* Styles for the pages and services sections */
 }
-footer .container .footer__content .footer__lists .footer__pages ul, footer .container .footer__content .footer__lists .footer__services ul {
+footer .container .footer__content .footer__lists .footer__pages ul,
+footer .container .footer__content .footer__lists .footer__services ul {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  /* Styles for list items within the footer */
 }
-footer .container .footer__content .footer__lists .footer__pages ul li a, footer .container .footer__content .footer__lists .footer__services ul li a {
+footer .container .footer__content .footer__lists .footer__pages ul li a,
+footer .container .footer__content .footer__lists .footer__services ul li a {
   color: black;
 }
 footer .container .footer__content .footer__icon {
   width: 33%;
   justify-content: space-between;
   flex-direction: column;
+  /* Styles for the logo within the icon section */
+  /* Styles for the icons within the icon section */
 }
 footer .container .footer__content .footer__icon .logo {
   align-items: center;
@@ -451,11 +503,13 @@ footer .container .footer__content .footer__icon .icons {
 }
 footer .container .footer__content .footer__contact {
   width: 33%;
+  /* Styles for the contact data within the contact section */
 }
 footer .container .footer__content .footer__contact__data {
   justify-content: space-between;
   flex-direction: column;
   gap: 50px;
+  /* Styles for paragraphs within the contact data */
 }
 footer .container .footer__content .footer__contact__data p {
   padding-right: 45px;
@@ -573,6 +627,127 @@ footer .container .footer__text {
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+  .container h1 {
+    font-size: 36px; /* Adjust h1 font size for tablets */
+  }
+  .container h2 {
+    font-size: 28px; /* Adjust h2 font size for tablets */
+  }
+  .container h3 {
+    font-size: 22px; /* Adjust h3 font size for tablets */
+  }
+  .container h4 {
+    font-size: 18px; /* Adjust h4 font size for tablets */
+  }
+  .container p {
+    font-size: 16px; /* Adjust paragraph font size for tablets */
+  }
+  .container .horizontal__list {
+    padding: 10px 20px;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0px;
+    top: 60px;
+    gap: 30px !important;
+    z-index: 9;
+    flex-direction: column;
+  }
+  .container .horizontal__list .nav__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px !important;
+  }
+  .container .horizontal__list .search__icon {
+    display: flex;
+    justify-content: center;
+  }
+  .container #toggleBtn {
+    display: block;
+    cursor: pointer;
+  }
+  .banner .banner__content {
+    max-width: 70%;
+  }
+  .card__div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__div .card {
+    width: 60% !important;
+    gap: 20px !important;
+  }
+  .contact__content--div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__content--div .left__div, .contact__content--div .right__div {
+    width: 100% !important;
+    align-items: center;
+  }
+  .contact__content--div .left__div .left__div--heading, .contact__content--div .right__div .left__div--heading {
+    padding: 0px !important;
+    text-align: center;
+  }
+  .brand__div .client__logo {
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    gap: 108px;
+  }
+  .brand__div .client__logo .logo {
+    max-width: 33%;
+  }
+  .our__project .heading, .our__project .project__card {
+    width: 100% !important;
+  }
+  .blog__cards, .blog__heading {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .blog__cards .blog__card, .blog__heading .blog__card {
+    width: 100% !important;
+  }
+  .blog__cards .blog__card img, .blog__heading .blog__card img {
+    width: 100%;
+  }
+  .blog__cards .blog__card .blog__card--bottom .blog__card--button img, .blog__heading .blog__card .blog__card--bottom .blog__card--button img {
+    height: 50px;
+    width: 50px;
+  }
+  .counter {
+    padding: 0 !important;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .counter .counter__text {
+    width: 100% !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer__content .footer__icon {
+    width: 50% !important;
+    align-items: center;
+    gap: 20px !important;
+  }
+  .footer__content .footer__icon .logo {
+    gap: 10px !important;
+  }
+  .footer__content .footer__contact {
+    text-align: center;
+  }
+  .footer__content .footer__contact p {
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
   }
   .container h1 {
     font-size: 36px; /* Adjust h1 font size for tablets */
