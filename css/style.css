@@ -8,6 +8,7 @@
   font-family: jost-normal;
   src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
 }
+/* Inside your CSS file (e.g., styles.css) */
 *,
 *::before,
 *::after {
@@ -152,6 +153,9 @@ header nav .horizontal__list ul {
 }
 header nav .horizontal__list ul li a {
   color: black;
+}
+header nav .horizontal__list .search__icon img {
+  height: 24px;
 }
 header nav #toggleBtn {
   display: none;
@@ -446,7 +450,7 @@ main .background__div .counter .counter__text {
   text-align: center;
   width: 33%;
 }
-main .background__div .counter .counter__text h1 {
+main .background__div .counter .counter__text h2 {
   color: #CDA274;
 }
 main .background__div .counter .counter__text .counter__text:nth-child(4) {
@@ -500,6 +504,9 @@ footer .container .footer__content .footer__icon .logo {
 }
 footer .container .footer__content .footer__icon .icons {
   gap: 54px;
+}
+footer .container .footer__content .footer__icon .icons img {
+  height: 22px;
 }
 footer .container .footer__content .footer__contact {
   width: 33%;
