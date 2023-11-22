@@ -14,11 +14,9 @@ $extra-extra-large-screen:1400px;
         img{
             border-radius: 0% 0% 0% 17%;
         }
-        .container{
             .banner__content{
 
                 width:55%;
-}
   }
 }
 .contact__us{
@@ -118,6 +116,11 @@ p {
     padding-right: 50px !important;
   }
 }
+.about__us{
+  .content__heading{
+    padding: 0px 105px !important;
+  }
+}
 .brand__div{
   .client__logo{
     flex-wrap: wrap;
@@ -140,6 +143,12 @@ border-right: none !important;
   .blog__cards{
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+
+.our__project{
+  .heading{
+    padding:0px 100px !important;
   }
 }
 .footer__content{
@@ -230,6 +239,12 @@ gap: 16px !important;
       }
     }
   }
+  .about__us{
+    .content__heading{
+      padding: 0px 105px !important;
+    }
+  }
+
   .brand__div{
     .client__logo{
       flex-wrap: wrap;
@@ -240,10 +255,11 @@ gap: 16px !important;
       }
     }
   }
+
   .our__project{
-    .heading,.project__card{
-  width: 100% !important;
-}
+    .heading{
+      padding:0px 50px !important;
+    }
   }
   .blog__cards,.blog__heading{
     width: 100% !important;
@@ -342,8 +358,11 @@ gap: 16px !important;
     }
   }
   .banner{
+    .banner__image{
+      height: 400px;
+    }
     .banner__content{
-      max-width: 70%;
+      max-width: 100%;
     }
   }
   .card__div{
@@ -366,6 +385,11 @@ gap: 16px !important;
         text-align: center;
 
       }
+    }
+  }
+  .about__us{
+    .content__heading{
+      padding: 0px 80px !important;
     }
   }
   .brand__div{
@@ -399,6 +423,11 @@ gap: 16px !important;
       }
     }
     }
+    }
+  }
+  .our__project{
+    .heading{
+      padding: 0 !important;
     }
   }
   .counter{

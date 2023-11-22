@@ -289,7 +289,7 @@ main .about__us .about__us--content {
 }
 main .about__us .about__us--content .content__heading {
   text-align: center;
-  width: 547px;
+  padding: 0px 300px;
   margin: 0 auto;
 }
 main .about__us .about__us--content .cards {
@@ -320,13 +320,13 @@ main .about__us .about__us--content .slick-dots {
   bottom: -50px !important;
 }
 main .about__us .about__us--content .slick-dots li button::before {
-  font-size: 50px;
+  font-size: 20px;
 }
 main .our__project {
   margin-bottom: 150px;
 }
 main .our__project .heading {
-  width: 737px;
+  padding: 0px 300px;
   margin: 0 auto;
   text-align: center;
 }
@@ -505,9 +505,6 @@ footer .container .footer__content .footer__icon .logo {
 footer .container .footer__content .footer__icon .icons {
   gap: 54px;
 }
-footer .container .footer__content .footer__icon .icons img {
-  height: 22px;
-}
 footer .container .footer__content .footer__contact {
   width: 33%;
   /* Styles for the contact data within the contact section */
@@ -534,7 +531,7 @@ footer .container .footer__text {
   main .banner img {
     border-radius: 0% 0% 0% 17%;
   }
-  main .banner .container .banner__content {
+  main .banner .banner__content {
     width: 55%;
   }
   main .contact__us .contact__content--div .left__div {
@@ -599,6 +596,9 @@ footer .container .footer__text {
   .left__div .left__div--heading {
     padding-right: 50px !important;
   }
+  .about__us .content__heading {
+    padding: 0px 105px !important;
+  }
   .brand__div .client__logo {
     flex-wrap: wrap;
     justify-content: space-around !important;
@@ -618,6 +618,9 @@ footer .container .footer__text {
   .blog .blog__cards {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .our__project .heading {
+    padding: 0px 100px !important;
   }
   .footer__content {
     flex-wrap: wrap;
@@ -697,6 +700,9 @@ footer .container .footer__text {
     padding: 0px !important;
     text-align: center;
   }
+  .about__us .content__heading {
+    padding: 0px 105px !important;
+  }
   .brand__div .client__logo {
     flex-wrap: wrap;
     justify-content: space-around !important;
@@ -705,8 +711,8 @@ footer .container .footer__text {
   .brand__div .client__logo .logo {
     max-width: 33%;
   }
-  .our__project .heading, .our__project .project__card {
-    width: 100% !important;
+  .our__project .heading {
+    padding: 0px 50px !important;
   }
   .blog__cards, .blog__heading {
     width: 100% !important;
@@ -795,8 +801,11 @@ footer .container .footer__text {
     display: block;
     cursor: pointer;
   }
+  .banner .banner__image {
+    height: 400px;
+  }
   .banner .banner__content {
-    max-width: 70%;
+    max-width: 100%;
   }
   .card__div {
     flex-direction: column;
@@ -817,6 +826,9 @@ footer .container .footer__text {
   .contact__content--div .left__div .left__div--heading, .contact__content--div .right__div .left__div--heading {
     padding: 0px !important;
     text-align: center;
+  }
+  .about__us .content__heading {
+    padding: 0px 80px !important;
   }
   .brand__div .client__logo {
     flex-wrap: wrap;
@@ -842,6 +854,9 @@ footer .container .footer__text {
   .blog__cards .blog__card .blog__card--bottom .blog__card--button img, .blog__heading .blog__card .blog__card--bottom .blog__card--button img {
     height: 50px;
     width: 50px;
+  }
+  .our__project .heading {
+    padding: 0 !important;
   }
   .counter {
     padding: 0 !important;
