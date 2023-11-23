@@ -1,0 +1,392 @@
+@use './variables' as *;
+
+/* main starts from here */ 
+main{
+    /* banner section starts from here */ 
+    .banner{
+        img{
+            border-radius: 0% 0% 0% 15%;
+        }
+        margin: 0;
+        position: relative;
+
+        .container{
+            .banner__content{
+
+                
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                width:567px;
+                display: flex;
+                flex-direction: column;
+                gap: 14.8px;
+            .banner__content--button{
+                a{
+                .btn{
+                    width: 145px;
+                    border-radius: 18px;
+                    border: none;
+                    background-color: $button-background;
+
+
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    padding: 1rem;
+                    box-shadow: 0px 10px 20px 0px rgba(192,192,192,0.35);
+                    p{
+                        font-size: 18px;
+                        font-family: jost-normal;
+                        color:$white-color;
+                    }
+                }
+            }
+            }
+            }
+        }
+    }
+    /* banner section ends here */ 
+
+
+
+     /* our plans section starts from here */
+    .our__plans{
+        margin: 200px 0px;
+        .container{
+            padding: 20px 22px;
+            .card__div{
+            gap: 42px;
+                .card{
+                    width: 33%;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 54px;
+                .card__text{
+                    flex-direction: column;
+                    gap: 21px;
+                }
+                .card__button{
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        .btn{
+                            border: none;
+                            background: none;
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            p{
+                                color: black;
+                            }
+                           
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+     /* our plans section ends here */ 
+
+      /* contact us section starts from here */ 
+
+    .contact__us{
+        margin-bottom: 200px;
+        .container{
+            .contact__content--div{
+                gap: 75px;
+            .left__div{
+                width:50%;
+                gap: 20px;
+                justify-content: space-around;
+                flex-direction: column;
+
+                .left__div--heading{
+                    padding-right: 75px;
+            }
+            .left__div--call
+            {
+                
+                align-items: center;
+                gap: 15px;
+                p{
+                    b{
+                        font-size: 24px;
+                    }
+                }
+            }
+            .left__div--button{
+                a{
+                .btn{
+                    width: 145px;
+                    border-radius: 18px;
+                    border: none;
+                    background-color: $button-background;
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    padding: 1rem;
+                    box-shadow: 0px 10px 20px 0px rgba(192,192,192,0.35);
+                    p{
+                        font-size: 18px;
+                        font-family: jost-normal;
+                        color: $white-color;
+                    }
+                }
+            }
+            }
+            }
+            .right__div{
+                width: 50%;
+
+                img{
+                    border-radius: 0% 35%;
+                }
+            }
+
+        }
+    }
+    }
+     /* contact us section ends here */ 
+
+
+      /* brand section starts from here */ 
+    .brand__div{
+        margin-bottom: 150px;
+        .client__logo
+        {
+         justify-content: space-between;
+         align-items: center;
+         padding: 0px 55px;
+        }
+    }
+     /* brand section ends here */ 
+
+      /* about us section starts from here */ 
+    .about__us{
+        margin-bottom: 150px;
+        .about__us--content{
+            border-radius: 30px;
+            background-color:$isabelline-color;
+            padding: 40px 0px 60px 0px;
+            .content__heading{
+                text-align: center;
+                padding: 0px 300px;
+                margin: 0 auto;
+            }
+            .cards{
+                margin-top: 38px;
+                padding: 0px 25px;
+               .slick-track{
+                display: flex;
+                gap: 20px;
+               
+                .card{
+                    padding: 90px 37px;
+                    width: 33%;
+                    border-radius: 20px;
+                    background-color:$white-color;
+                    .card__top{
+                        align-items: center;
+                        gap: 10px;
+                        img{
+
+                            border-radius: 50%;
+                        }
+                    }
+                    .card__bottom{
+                        p{
+                            margin-top: 24px;
+                        }
+                    }
+            
+                }
+            }
+        }
+            .slick-dots{
+                bottom: -50px !important;
+              li{
+                button::before{
+                  font-size: 20px;
+              }
+            }
+          }
+        }
+    }
+     /* about us section ends here */ 
+
+
+      /* our project section starts from here */ 
+
+    .our__project{
+        margin-bottom: 150px;
+        .heading{
+        padding: 0px 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .project__cards{
+            flex-wrap: wrap;
+        justify-content: space-between;
+            .project__card{
+                margin-top:50px;
+                width: 44%;
+        .project__card--top{
+            .img1{
+                border-radius: 0% 15% 0% 0%;
+            }
+            .img2{
+                border-radius: 15% 0% 0% 0%;
+            }
+            .img3{
+                border-radius: 0% 0% 15% 0%;
+            }
+            .img4{
+                border-radius: 0% 0% 0% 15%;
+            }
+        }
+        .project__card--bottom{
+            justify-content: space-between;
+            padding-top: 10px;
+            .btn{
+                border: none;
+                border-radius: 50%;
+            }
+        }
+    }
+    }
+    }
+     /* our project section ends here */ 
+
+      /* blog section starts from  here */ 
+
+    .blog{
+        margin-bottom: 200px;
+        .container{
+
+            .blog__heading{
+                    width: 737px;
+                    margin: 0 auto;
+                    text-align: center;
+            }
+           .blog__cards{
+            margin-top: 20px;
+            gap: 21px;
+            .blog__card{
+                width: 33.3%;
+                padding: 21px;
+                position: relative;
+                border-radius: 62px;
+                border: 1px solid #E7E7E7;
+                box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+                .blog__card--top{
+                    position: relative;
+                    border-radius: 10px 10px 0px 0px;
+                    img{
+                        border-radius: 15% 15% 0 0;
+                    }
+                    .design__type{
+                        position: absolute;
+                    
+                            width: max-content;
+                        padding: 5px 3px;
+                        background: $white-color;
+                        bottom: 10px;
+                        transform: translateY(-50%);
+                        left: 10px;
+                        }
+                }
+                .blog__card--bottom{
+                 
+                
+                 h4{
+                    margin-top: 20px;
+                    
+                 }
+                }
+             .date{
+                align-items: center;
+                justify-content: space-between;
+                .btn{
+                    background: none;
+                    border:none;
+                }
+             }
+            }
+            }
+        }
+
+    }
+     /* blog section ends here */ 
+
+      /* contact section starts from here */ 
+    .contact{
+        .contact__card{
+            background-color: $button-background;
+            color: $white-color;
+            text-align: center;
+            padding: 3rem;
+            border-radius: 25px;
+            .card__button{
+                display: flex;
+                justify-content: center;
+                a{
+                    .btn{
+                        margin-top: 32px;
+                        border-radius: 18px;
+                        border: none;
+                        background-color:$brown-color;
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        padding: 1rem;
+                        box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+                        p{
+                            font-size: 18px;
+                            color:$white-color;
+                            font-family: jost-normal;
+                        }
+                        img{
+                            padding: 10px;
+                        }
+                       
+                    }
+                }
+            }
+
+        }
+    }
+     /* contact section ends here */ 
+
+      /* background  section starts from here */ 
+    .background__div{
+        margin-bottom: 200px;
+        background-color:$isabelline-color;
+        .counter{
+            justify-content: space-around;
+            padding: 9.5rem 0rem;
+            .counter__text{
+                padding: 0px 60px 0 0px;
+                border-right:1px solid $brown-color;
+                text-align: center;
+                width: 33%;
+                h2{
+                    color: $brown-color;
+                }
+               .counter__text:nth-child(4)
+                {
+                    border: none;
+                }
+               
+            }
+            :nth-child(4)
+            {
+                border-right: none;
+            }
+        }
+    }
+     /* background section ends here */ 
+}
+ /* main ends here */ 

@@ -1,0 +1,918 @@
+/* css resets starts */
+/* Box sizing rules */
+@font-face {
+  font-family: DM serif Display;
+  src: url(../vendor/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: jost-normal;
+  src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li a {
+  font-family: jost-normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html, body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: normal;
+  font-family: jost-normal;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture, svg {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: jost-normal;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 84px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.display__flex {
+  display: flex;
+}
+
+/* Styling for header */
+header {
+  /* Navigation styles */
+}
+header nav {
+  justify-content: space-between;
+  align-items: center;
+  /* Logo styles */
+  /* Horizontal list styles */
+  /* Toggle button styles */
+}
+header nav .logo {
+  align-items: center;
+  /* Logo text styles */
+}
+header nav .logo .logo__text {
+  padding: 0px 11px;
+}
+header nav .horizontal__list {
+  gap: 31px;
+  /* Unordered list styles */
+}
+header nav .horizontal__list ul {
+  gap: 48px;
+}
+header nav .horizontal__list ul li a {
+  color: black;
+}
+header nav .horizontal__list .search__icon img {
+  height: 24px;
+}
+header nav #toggleBtn {
+  display: none;
+  font-size: 30px;
+}
+
+/* main starts from here */
+main {
+  /* banner section starts from here */
+  /* banner section ends here */
+  /* our plans section starts from here */
+  /* our plans section ends here */
+  /* contact us section starts from here */
+  /* contact us section ends here */
+  /* brand section starts from here */
+  /* brand section ends here */
+  /* about us section starts from here */
+  /* about us section ends here */
+  /* our project section starts from here */
+  /* our project section ends here */
+  /* blog section starts from  here */
+  /* blog section ends here */
+  /* contact section starts from here */
+  /* contact section ends here */
+  /* background  section starts from here */
+  /* background section ends here */
+}
+main .banner {
+  margin: 0;
+  position: relative;
+}
+main .banner img {
+  border-radius: 0% 0% 0% 15%;
+}
+main .banner .container .banner__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 567px;
+  display: flex;
+  flex-direction: column;
+  gap: 14.8px;
+}
+main .banner .container .banner__content .banner__content--button a .btn {
+  width: 145px;
+  border-radius: 18px;
+  border: none;
+  background-color: #292F36;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
+main .banner .container .banner__content .banner__content--button a .btn p {
+  font-size: 18px;
+  font-family: jost-normal;
+  color: #FFFFFF;
+}
+main .our__plans {
+  margin: 200px 0px;
+}
+main .our__plans .container {
+  padding: 20px 22px;
+}
+main .our__plans .container .card__div {
+  gap: 42px;
+}
+main .our__plans .container .card__div .card {
+  width: 33%;
+  flex-direction: column;
+  text-align: center;
+  gap: 54px;
+}
+main .our__plans .container .card__div .card .card__text {
+  flex-direction: column;
+  gap: 21px;
+}
+main .our__plans .container .card__div .card .card__button {
+  display: flex;
+  justify-content: center;
+}
+main .our__plans .container .card__div .card .card__button a .btn {
+  border: none;
+  background: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+main .our__plans .container .card__div .card .card__button a .btn p {
+  color: black;
+}
+main .contact__us {
+  margin-bottom: 200px;
+}
+main .contact__us .container .contact__content--div {
+  gap: 75px;
+}
+main .contact__us .container .contact__content--div .left__div {
+  width: 50%;
+  gap: 20px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--heading {
+  padding-right: 75px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--call {
+  align-items: center;
+  gap: 15px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--call p b {
+  font-size: 24px;
+}
+main .contact__us .container .contact__content--div .left__div .left__div--button a .btn {
+  width: 145px;
+  border-radius: 18px;
+  border: none;
+  background-color: #292F36;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
+main .contact__us .container .contact__content--div .left__div .left__div--button a .btn p {
+  font-size: 18px;
+  font-family: jost-normal;
+  color: #FFFFFF;
+}
+main .contact__us .container .contact__content--div .right__div {
+  width: 50%;
+}
+main .contact__us .container .contact__content--div .right__div img {
+  border-radius: 0% 35%;
+}
+main .brand__div {
+  margin-bottom: 150px;
+}
+main .brand__div .client__logo {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 55px;
+}
+main .about__us {
+  margin-bottom: 150px;
+}
+main .about__us .about__us--content {
+  border-radius: 30px;
+  background-color: #F4F0EC;
+  padding: 40px 0px 60px 0px;
+}
+main .about__us .about__us--content .content__heading {
+  text-align: center;
+  padding: 0px 300px;
+  margin: 0 auto;
+}
+main .about__us .about__us--content .cards {
+  margin-top: 38px;
+  padding: 0px 25px;
+}
+main .about__us .about__us--content .cards .slick-track {
+  display: flex;
+  gap: 20px;
+}
+main .about__us .about__us--content .cards .slick-track .card {
+  padding: 90px 37px;
+  width: 33%;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+main .about__us .about__us--content .cards .slick-track .card .card__top {
+  align-items: center;
+  gap: 10px;
+}
+main .about__us .about__us--content .cards .slick-track .card .card__top img {
+  border-radius: 50%;
+}
+main .about__us .about__us--content .cards .slick-track .card .card__bottom p {
+  margin-top: 24px;
+}
+main .about__us .about__us--content .slick-dots {
+  bottom: -50px !important;
+}
+main .about__us .about__us--content .slick-dots li button::before {
+  font-size: 20px;
+}
+main .our__project {
+  margin-bottom: 150px;
+}
+main .our__project .heading {
+  padding: 0px 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .our__project .project__cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .our__project .project__cards .project__card {
+  margin-top: 50px;
+  width: 44%;
+}
+main .our__project .project__cards .project__card .project__card--top .img1 {
+  border-radius: 0% 15% 0% 0%;
+}
+main .our__project .project__cards .project__card .project__card--top .img2 {
+  border-radius: 15% 0% 0% 0%;
+}
+main .our__project .project__cards .project__card .project__card--top .img3 {
+  border-radius: 0% 0% 15% 0%;
+}
+main .our__project .project__cards .project__card .project__card--top .img4 {
+  border-radius: 0% 0% 0% 15%;
+}
+main .our__project .project__cards .project__card .project__card--bottom {
+  justify-content: space-between;
+  padding-top: 10px;
+}
+main .our__project .project__cards .project__card .project__card--bottom .btn {
+  border: none;
+  border-radius: 50%;
+}
+main .blog {
+  margin-bottom: 200px;
+}
+main .blog .container .blog__heading {
+  width: 737px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .blog .container .blog__cards {
+  margin-top: 20px;
+  gap: 21px;
+}
+main .blog .container .blog__cards .blog__card {
+  width: 33.3%;
+  padding: 21px;
+  position: relative;
+  border-radius: 62px;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+}
+main .blog .container .blog__cards .blog__card .blog__card--top {
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+}
+main .blog .container .blog__cards .blog__card .blog__card--top img {
+  border-radius: 15% 15% 0 0;
+}
+main .blog .container .blog__cards .blog__card .blog__card--top .design__type {
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 3px;
+  background: #FFFFFF;
+  bottom: 10px;
+  transform: translateY(-50%);
+  left: 10px;
+}
+main .blog .container .blog__cards .blog__card .blog__card--bottom h4 {
+  margin-top: 20px;
+}
+main .blog .container .blog__cards .blog__card .date {
+  align-items: center;
+  justify-content: space-between;
+}
+main .blog .container .blog__cards .blog__card .date .btn {
+  background: none;
+  border: none;
+}
+main .contact .contact__card {
+  background-color: #292F36;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 25px;
+}
+main .contact .contact__card .card__button {
+  display: flex;
+  justify-content: center;
+}
+main .contact .contact__card .card__button a .btn {
+  margin-top: 32px;
+  border-radius: 18px;
+  border: none;
+  background-color: #CDA274;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
+main .contact .contact__card .card__button a .btn p {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: jost-normal;
+}
+main .contact .contact__card .card__button a .btn img {
+  padding: 10px;
+}
+main .background__div {
+  margin-bottom: 200px;
+  background-color: #F4F0EC;
+}
+main .background__div .counter {
+  justify-content: space-around;
+  padding: 9.5rem 0rem;
+}
+main .background__div .counter .counter__text {
+  padding: 0px 60px 0 0px;
+  border-right: 1px solid #CDA274;
+  text-align: center;
+  width: 33%;
+}
+main .background__div .counter .counter__text h2 {
+  color: #CDA274;
+}
+main .background__div .counter .counter__text .counter__text:nth-child(4) {
+  border: none;
+}
+main .background__div .counter :nth-child(4) {
+  border-right: none;
+}
+
+/* main ends here */
+/* Styling for the footer */
+footer {
+  margin-top: 134px;
+  /* Styles for the content container within the footer */
+}
+footer .container {
+  /* Styles for the main content of the footer */
+  /* Styles for the text section at the bottom of the footer */
+}
+footer .container .footer__content {
+  gap: 100px;
+  /* Styles for the lists in the footer */
+  /* Styles for the icon section in the footer */
+  /* Styles for the contact section in the footer */
+}
+footer .container .footer__content .footer__lists {
+  width: 33%;
+  justify-content: space-around;
+  /* Styles for the pages and services sections */
+}
+footer .container .footer__content .footer__lists .footer__pages ul,
+footer .container .footer__content .footer__lists .footer__services ul {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* Styles for list items within the footer */
+}
+footer .container .footer__content .footer__lists .footer__pages ul li a,
+footer .container .footer__content .footer__lists .footer__services ul li a {
+  color: black;
+}
+footer .container .footer__content .footer__icon {
+  width: 33%;
+  justify-content: space-between;
+  flex-direction: column;
+  /* Styles for the logo within the icon section */
+  /* Styles for the icons within the icon section */
+}
+footer .container .footer__content .footer__icon .logo {
+  align-items: center;
+}
+footer .container .footer__content .footer__icon .icons {
+  gap: 54px;
+}
+footer .container .footer__content .footer__icon #twitter {
+  height: 16px;
+}
+footer .container .footer__content .footer__icon #linkedin {
+  height: 17px;
+}
+footer .container .footer__content .footer__contact {
+  width: 33%;
+  /* Styles for the contact data within the contact section */
+}
+footer .container .footer__content .footer__contact__data {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+  /* Styles for paragraphs within the contact data */
+}
+footer .container .footer__content .footer__contact__data p {
+  padding-right: 45px;
+}
+footer .container .footer__text {
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  main .banner img {
+    border-radius: 0% 0% 0% 17%;
+  }
+  main .banner .banner__content {
+    width: 55%;
+  }
+  main .contact__us .contact__content--div .left__div {
+    gap: 15px;
+  }
+  main .contact__us .contact__content--div .left__div .left__div--heading {
+    padding-right: 0px !important;
+  }
+  main .contact__us .contact__content--div .right__div img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .about__us .card {
+    padding: 50px 10px !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  main .banner img {
+    border-radius: 0% 0% 0% 30%;
+  }
+  main .banner .container .banner__content {
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  h1 {
+    font-size: 48px; /* Adjust h1 font size for tablets */
+  }
+  h2 {
+    font-size: 32px; /* Adjust h2 font size for tablets */
+  }
+  h3 {
+    font-size: 24px; /* Adjust h3 font size for tablets */
+  }
+  h4 {
+    font-size: 18px; /* Adjust h4 font size for tablets */
+  }
+  p {
+    font-size: 14px; /* Adjust paragraph font size for tablets */
+  }
+  .banner__content {
+    width: 372px !important;
+  }
+  .horizontal__list {
+    gap: 16px !important;
+  }
+  .horizontal__list ul {
+    gap: 20px !important;
+  }
+  .our__plans .card__div {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .left__div .left__div--heading {
+    padding-right: 50px !important;
+  }
+  .about__us .content__heading {
+    padding: 0px 105px !important;
+  }
+  .brand__div .client__logo {
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    gap: 54px;
+  }
+  .brand__div .client__logo .logo {
+    max-width: 33%;
+  }
+  .counter {
+    flex-wrap: wrap;
+    gap: 75px;
+    padding: 5rem 0rem !important;
+  }
+  .counter .counter__text {
+    border-right: none !important;
+  }
+  .blog .blog__cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .our__project .heading {
+    padding: 0px 100px !important;
+  }
+  .footer__content {
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-around !important;
+  }
+  .footer__content .footer__contact {
+    text-align: center;
+  }
+  .footer__content .footer__contact p {
+    padding: 0 !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .container h1 {
+    font-size: 36px; /* Adjust h1 font size for tablets */
+  }
+  .container h2 {
+    font-size: 28px; /* Adjust h2 font size for tablets */
+  }
+  .container h3 {
+    font-size: 22px; /* Adjust h3 font size for tablets */
+  }
+  .container h4 {
+    font-size: 18px; /* Adjust h4 font size for tablets */
+  }
+  .container p {
+    font-size: 16px; /* Adjust paragraph font size for tablets */
+  }
+  .container .horizontal__list {
+    padding: 10px 20px;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0px;
+    top: 60px;
+    gap: 30px !important;
+    z-index: 9;
+    flex-direction: column;
+  }
+  .container .horizontal__list .nav__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px !important;
+  }
+  .container .horizontal__list .search__icon {
+    display: flex;
+    justify-content: center;
+  }
+  .container #toggleBtn {
+    display: block;
+    cursor: pointer;
+  }
+  .banner .banner__content {
+    max-width: 70%;
+  }
+  .card__div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__div .card {
+    width: 60% !important;
+    gap: 20px !important;
+  }
+  .contact__content--div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__content--div .left__div, .contact__content--div .right__div {
+    width: 100% !important;
+    align-items: center;
+  }
+  .contact__content--div .left__div .left__div--heading, .contact__content--div .right__div .left__div--heading {
+    padding: 0px !important;
+    text-align: center;
+  }
+  .about__us .content__heading {
+    padding: 0px 105px !important;
+  }
+  .brand__div .client__logo {
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    gap: 108px;
+  }
+  .brand__div .client__logo .logo {
+    max-width: 33%;
+  }
+  .our__project .heading {
+    padding: 0px 50px !important;
+  }
+  .blog__cards, .blog__heading {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .blog__cards .blog__card, .blog__heading .blog__card {
+    width: 100% !important;
+  }
+  .blog__cards .blog__card img, .blog__heading .blog__card img {
+    width: 100%;
+  }
+  .blog__cards .blog__card .blog__card--bottom .blog__card--button img, .blog__heading .blog__card .blog__card--bottom .blog__card--button img {
+    height: 50px;
+    width: 50px;
+  }
+  .counter {
+    padding: 0 !important;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .counter .counter__text {
+    width: 100% !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer__content .footer__icon {
+    width: 50% !important;
+    align-items: center;
+    gap: 20px !important;
+  }
+  .footer__content .footer__icon .logo {
+    gap: 10px !important;
+  }
+  .footer__content .footer__contact {
+    text-align: center;
+  }
+  .footer__content .footer__contact p {
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .container h1 {
+    font-size: 36px; /* Adjust h1 font size for tablets */
+  }
+  .container h2 {
+    font-size: 28px; /* Adjust h2 font size for tablets */
+  }
+  .container h3 {
+    font-size: 22px; /* Adjust h3 font size for tablets */
+  }
+  .container h4 {
+    font-size: 18px; /* Adjust h4 font size for tablets */
+  }
+  .container p {
+    font-size: 16px; /* Adjust paragraph font size for tablets */
+  }
+  .container .horizontal__list {
+    padding: 10px 20px;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0px;
+    top: 60px;
+    gap: 30px !important;
+    z-index: 9;
+    flex-direction: column;
+  }
+  .container .horizontal__list .nav__list {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px !important;
+  }
+  .container .horizontal__list .search__icon {
+    display: flex;
+    justify-content: center;
+  }
+  .container #toggleBtn {
+    display: block;
+    cursor: pointer;
+  }
+  .banner .banner__image {
+    height: 400px;
+  }
+  .banner .banner__content {
+    max-width: 100%;
+  }
+  .card__div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__div .card {
+    width: 60% !important;
+    gap: 20px !important;
+  }
+  .contact__content--div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__content--div .left__div, .contact__content--div .right__div {
+    width: 100% !important;
+    align-items: center;
+  }
+  .contact__content--div .left__div .left__div--heading, .contact__content--div .right__div .left__div--heading {
+    padding: 0px !important;
+    text-align: center;
+  }
+  .about__us .content__heading {
+    padding: 0px 80px !important;
+  }
+  .brand__div .client__logo {
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    gap: 108px;
+  }
+  .brand__div .client__logo .logo {
+    max-width: 33%;
+  }
+  .our__project .heading, .our__project .project__card {
+    width: 100% !important;
+  }
+  .blog__cards, .blog__heading {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .blog__cards .blog__card, .blog__heading .blog__card {
+    width: 100% !important;
+  }
+  .blog__cards .blog__card img, .blog__heading .blog__card img {
+    width: 100%;
+  }
+  .blog__cards .blog__card .blog__card--bottom .blog__card--button img, .blog__heading .blog__card .blog__card--bottom .blog__card--button img {
+    height: 50px;
+    width: 50px;
+  }
+  .our__project .heading {
+    padding: 0 !important;
+  }
+  .counter {
+    padding: 0 !important;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .counter .counter__text {
+    width: 100% !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer__content .footer__icon {
+    width: 50% !important;
+    align-items: center;
+    gap: 20px !important;
+  }
+  .footer__content .footer__icon .logo {
+    gap: 10px !important;
+  }
+  .footer__content .footer__contact {
+    text-align: center;
+  }
+  .footer__content .footer__contact p {
+    padding: 0 !important;
+  }
+}/*# sourceMappingURL=style.css.map */

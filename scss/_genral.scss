@@ -1,0 +1,110 @@
+/* css resets starts */
+/* Box sizing rules */
+@use './typography';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+ul{
+    list-style-type: none;
+    li{
+      a{
+        font-family: jost-normal;
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+html,body{
+    height: 100%;
+}
+body {
+  text-rendering: optimizeSpeed;
+  line-height: normal;
+  font-family: jost-normal;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture,svg {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a{
+    text-decoration: none;
+}
+// section{
+//   margin-top: 134px;
+// }
+p{
+  font-family: jost-normal;
+  font-size: 18px;
+}
+h1{
+  font-size: 84px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+  font-size: 50px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+  font-size: 40px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+h4{
+  font-size: 25px;
+  font-family: DM serif Display;
+  font-weight: 400;
+  font-style: normal;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+.display__flex{
+  display: flex;
+}

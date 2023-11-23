@@ -1,0 +1,45 @@
+/* Styling for header */
+header {
+    /* Navigation styles */
+    nav {
+        justify-content: space-between; 
+        align-items: center; 
+        
+        /* Logo styles */
+        .logo {
+            align-items: center; 
+            
+            /* Logo text styles */
+            .logo__text {
+                padding: 0px 11px; 
+            }
+        }
+        
+        /* Horizontal list styles */
+        .horizontal__list {
+            gap: 31px; 
+            
+            /* Unordered list styles */
+            ul {
+                gap: 48px; 
+                li{
+                    a{
+                        color: black;
+                    }
+                }
+            }
+            .search__icon{
+                img{
+                    height: 24px;
+                }
+            }
+        }
+        
+        /* Toggle button styles */
+        #toggleBtn {
+            display: none; 
+            font-size: 30px; 
+            
+        }
+    }
+}
