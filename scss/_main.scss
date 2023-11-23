@@ -1,11 +1,15 @@
 @use './variables' as *;
+
+/* main starts from here */ 
 main{
+    /* banner section starts from here */ 
     .banner{
         img{
             border-radius: 0% 0% 0% 15%;
         }
         margin: 0;
         position: relative;
+
         .container{
             .banner__content{
 
@@ -43,6 +47,11 @@ main{
             }
         }
     }
+    /* banner section ends here */ 
+
+
+
+     /* our plans section starts from here */
     .our__plans{
         margin: 200px 0px;
         .container{
@@ -79,6 +88,10 @@ main{
             }
         }
     }
+     /* our plans section ends here */ 
+
+      /* contact us section starts from here */ 
+
     .contact__us{
         margin-bottom: 200px;
         .container{
@@ -136,6 +149,10 @@ main{
         }
     }
     }
+     /* contact us section ends here */ 
+
+
+      /* brand section starts from here */ 
     .brand__div{
         margin-bottom: 150px;
         .client__logo
@@ -145,6 +162,9 @@ main{
          padding: 0px 55px;
         }
     }
+     /* brand section ends here */ 
+
+      /* about us section starts from here */ 
     .about__us{
         margin-bottom: 150px;
         .about__us--content{
@@ -195,6 +215,11 @@ main{
           }
         }
     }
+     /* about us section ends here */ 
+
+
+      /* our project section starts from here */ 
+
     .our__project{
         margin-bottom: 150px;
         .heading{
@@ -233,6 +258,10 @@ main{
     }
     }
     }
+     /* our project section ends here */ 
+
+      /* blog section starts from  here */ 
+
     .blog{
         margin-bottom: 200px;
         .container{
@@ -290,6 +319,9 @@ main{
         }
 
     }
+     /* blog section ends here */ 
+
+      /* contact section starts from here */ 
     .contact{
         .contact__card{
             background-color: $button-background;
@@ -326,6 +358,9 @@ main{
 
         }
     }
+     /* contact section ends here */ 
+
+      /* background  section starts from here */ 
     .background__div{
         margin-bottom: 200px;
         background-color:$isabelline-color;
@@ -352,4 +387,6 @@ main{
             }
         }
     }
+     /* background section ends here */ 
 }
+ /* main ends here */ 
