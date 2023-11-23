@@ -8,7 +8,6 @@
   font-family: jost-normal;
   src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
 }
-/* Inside your CSS file (e.g., styles.css) */
 *,
 *::before,
 *::after {
@@ -162,6 +161,27 @@ header nav #toggleBtn {
   font-size: 30px;
 }
 
+/* main starts from here */
+main {
+  /* banner section starts from here */
+  /* banner section ends here */
+  /* our plans section starts from here */
+  /* our plans section ends here */
+  /* contact us section starts from here */
+  /* contact us section ends here */
+  /* brand section starts from here */
+  /* brand section ends here */
+  /* about us section starts from here */
+  /* about us section ends here */
+  /* our project section starts from here */
+  /* our project section ends here */
+  /* blog section starts from  here */
+  /* blog section ends here */
+  /* contact section starts from here */
+  /* contact section ends here */
+  /* background  section starts from here */
+  /* background section ends here */
+}
 main .banner {
   margin: 0;
   position: relative;
@@ -460,6 +480,7 @@ main .background__div .counter :nth-child(4) {
   border-right: none;
 }
 
+/* main ends here */
 /* Styling for the footer */
 footer {
   margin-top: 134px;
@@ -504,6 +525,12 @@ footer .container .footer__content .footer__icon .logo {
 }
 footer .container .footer__content .footer__icon .icons {
   gap: 54px;
+}
+footer .container .footer__content .footer__icon #twitter {
+  height: 16px;
+}
+footer .container .footer__content .footer__icon #linkedin {
+  height: 17px;
 }
 footer .container .footer__content .footer__contact {
   width: 33%;
